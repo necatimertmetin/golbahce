@@ -51,12 +51,12 @@ const LightTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: `"Playfair", "Montserrat", sans-serif`,
+    fontFamily: ` "Montserrat", sans-serif`,
   },
   components: {
     MuiTypography: {
       defaultProps: {
-        fontFamily: `"Playfair", "Montserrat", sans-serif`,
+        fontFamily: ` "Montserrat", sans-serif`,
       },
       styleOverrides: {
         root: {
@@ -125,7 +125,7 @@ const DarkTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: `"Playfair", "Montserrat", sans-serif`,
+    fontFamily: ` "Montserrat", sans-serif`,
   },
   components: {
     MuiAppBar: {
@@ -163,7 +163,7 @@ const DarkTheme = createTheme({
     },
     MuiTypography: {
       defaultProps: {
-        fontFamily: `"Playfair", "Montserrat", sans-serif`,
+        fontFamily: ` "Montserrat", sans-serif`,
       },
     },
   },

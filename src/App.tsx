@@ -11,7 +11,7 @@ import { ColorModeContextProvider } from "./provider/ColorModeProvider";
 import { Home } from "./pages/home/Home";
 import { About } from "./pages/about/About";
 import { Contact } from "./pages/contact/Contact";
-import { Menu } from "./pages/menu/Menu";
+import MenuPage from "./pages/menu/Menu2";
 
 const rtlLanguages = ["ar", "he", "fa", "ur"];
 
@@ -46,7 +46,7 @@ function AppContent() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/menu" element={<Menu />} />
+            <Route path="/menu" element={<MenuPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
