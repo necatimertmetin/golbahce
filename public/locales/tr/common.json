@@ -1,0 +1,10 @@
+{
+  "layout": {
+    "header": {
+      "homepage": "Anasayfa",
+      "menu": "Menü",
+      "about": "Hakkımızda",
+      "contact": "İletişim"
+    }
+  }
+}
