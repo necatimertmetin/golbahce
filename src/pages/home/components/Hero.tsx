@@ -27,7 +27,6 @@ export const Hero = () => {
             position: "absolute",
             bottom: 25,
             left: 25,
-            fontFamily: `"Pacifico", cursive`,
             fontWeight: 500,
             width: { xs: "90vw", md: "60vw" },
             fontSize: { xs: "2rem", sm: "3rem", md: "4rem" },

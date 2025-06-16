@@ -70,7 +70,6 @@ export const Header = () => {
               textDecoration: "none",
               color: theme.palette.text.primary,
               fontWeight: 700,
-              fontFamily: `"Pacifico", cursive`,
               fontSize: { xs: "1.25rem", sm: "1.5rem" },
             }}
           >

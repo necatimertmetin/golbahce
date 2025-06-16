@@ -63,7 +63,6 @@ export const Footer = () => {
               <Typography
                 variant="h3"
                 sx={{
-                  fontFamily: '"Pacifico", cursive',
                   fontSize: { xs: "1.8rem", md: "2.2rem" },
                   background: "linear-gradient(45deg, #4ECDC4, #45B7D1)",
                   backgroundClip: "text",
