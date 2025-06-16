@@ -1,15 +1,18 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { menuData } from "./types";
+import { Link } from "react-router-dom";
+import { useTranslate } from "../../hooks/useTranslation";
 
 export const MenuPage = () => {
+  const { translate } = useTranslate("pages.menu");
   return (
     <Box p={3} mx={30}>
       <Typography variant="h2" gutterBottom textAlign="center">
         Menü
       </Typography>
       <Grid container spacing={5}>
-        {menuData.map((category) => (
+        {menuData.map((category, index) => (
           <Grid
             size={{ xs: 12, md: 6 }}
             display={"flex"}
@@ -31,13 +34,18 @@ export const MenuPage = () => {
               fontWeight={"bold"}
               textTransform={"uppercase"}
             >
-              {category.title}
+              {translate(category.title)}
             </Typography>
             <Typography variant="body1" fontWeight={500}>
-              {category.description}
+              {translate(category.description)}
             </Typography>
-            <Button variant="contained" endIcon={<NavigateNextIcon />}>
-              İçerİkler
+            <Button
+              variant="contained"
+              endIcon={<NavigateNextIcon />}
+              component={Link}
+              to={`/menu/${encodeURIComponent(index)}`}
+            >
+              İçerikler
             </Button>
           </Grid>
         ))}

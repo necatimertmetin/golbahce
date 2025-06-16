@@ -12,6 +12,8 @@ import { Home } from "./pages/home/Home";
 import { About } from "./pages/about/About";
 import { Contact } from "./pages/contact/Contact";
 import MenuPage from "./pages/menu/Menu2";
+import { menuData } from "./pages/menu/types";
+import { CategoryPage } from "./pages/menu/category/Category";
 
 const rtlLanguages = ["ar", "he", "fa", "ur"];
 
@@ -47,6 +49,13 @@ function AppContent() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/menu" element={<MenuPage />} />
+            {menuData.map((category, index) => (
+              <Route
+                key={category.title}
+                path={`/menu/${encodeURIComponent(index)}`}
+                element={<CategoryPage category={category} />}
+              />
+            ))}
           </Route>
         </Routes>
       </BrowserRouter>
