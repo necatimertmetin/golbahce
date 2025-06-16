@@ -9,6 +9,7 @@
   },
   "pages": {
     "menu": {
+      "title": "Menü",
       "breakfast": {
         "title": "Kahvaltılıklar",
         "description": "Günün en önemli öğününde bitirilemeyen tabaklar!! Koccaman Lezzetler…",
@@ -16,67 +17,55 @@
           "serpme_single": {
             "title": "Serpme Kahvaltı (Tek Kişilik)",
             "description": "Peynir (3 çeşit), Yeşillik Tabağı, Zeytin (2 çeşit), Tereyağ, Bal, Reçel (2 çeşit), Kaymak, Sıcak Tabağı (Pişi + Sigara Böreği + Patates Kızartması), Erken Hasat Zeytinyağı, Acuka - Ceviz - Kayısı",
-            "image": "serpme_single.jpg",
+
             "extras": {
               "egg_with_pastirma": {
                 "title": "Pastırmalı Yumurta",
-                "description": "Lezzetli pastırmayla hazırlanmış yumurta.",
-                "image": "egg_with_pastirma.jpg"
+                "description": "Lezzetli pastırmayla hazırlanmış yumurta."
               },
               "egg_with_sucuk": {
                 "title": "Sucuklu Yumurta",
-                "description": "Sucuklu enfes yumurta.",
-                "image": "egg_with_sucuk.jpg"
+                "description": "Sucuklu enfes yumurta."
               },
               "menemen_varieties": {
                 "title": "Menemen Çeşitleri",
-                "description": "Taze domates, biber ve yumurtadan yapılan menemen çeşitleri.",
-                "image": "menemen_varieties.jpg"
+                "description": "Taze domates, biber ve yumurtadan yapılan menemen çeşitleri."
               },
               "omelet_varieties": {
                 "title": "Omlet Çeşitleri",
-                "description": "Çeşitli malzemelerle hazırlanmış omletler.",
-                "image": "omelet_varieties.jpg"
+                "description": "Çeşitli malzemelerle hazırlanmış omletler."
               },
               "sucuk_plate": {
                 "title": "Sucuk Tabağı",
-                "description": "Baharatlı sucuk dilimleri.",
-                "image": "sucuk_plate.jpg"
+                "description": "Baharatlı sucuk dilimleri."
               },
               "sosis_plate": {
                 "title": "Sosis Tabağı",
-                "description": "Lezzetli sosis dilimleri.",
-                "image": "sosis_plate.jpg"
+                "description": "Lezzetli sosis dilimleri."
               },
               "chips_plate": {
                 "title": "Cips Tabağı",
-                "description": "Kıtır çıtır patates cipsi.",
-                "image": "chips_plate.jpg"
+                "description": "Kıtır çıtır patates cipsi."
               },
               "pisi_plate": {
                 "title": "Pişi Tabağı",
-                "description": "Kızarmış hamur tatlısı pişi.",
-                "image": "pisi_plate.jpg"
+                "description": "Kızarmış hamur tatlısı pişi."
               },
               "sigara_boregi": {
                 "title": "Sigara Böreği",
-                "description": "İçli ince börek ruloları.",
-                "image": "sigara_boregi.jpg"
+                "description": "İçli ince börek ruloları."
               },
               "pacanga_boregi": {
                 "title": "Paçanga Böreği",
-                "description": "Pastırmalı, kaşarlı börek.",
-                "image": "pacanga_boregi.jpg"
+                "description": "Pastırmalı, kaşarlı börek."
               },
               "kuymak": {
                 "title": "Kuymak",
-                "description": "Mıhlama olarak da bilinen yöresel lezzet.",
-                "image": "kuymak.jpg"
+                "description": "Mıhlama olarak da bilinen yöresel lezzet."
               },
               "hellim": {
                 "title": "Hellim L2Q",
-                "description": "Kıbrıs peyniri hellim ile hazırlanmış özel lezzet.",
-                "image": "hellim.jpg"
+                "description": "Kıbrıs peyniri hellim ile hazırlanmış özel lezzet."
               }
             }
           },
@@ -92,13 +81,11 @@
         "items": {
           "karisik": {
             "title": "Karışık",
-            "description": "Domates, biber, sucuk ve peynirli karışık tost.",
-            "image": "toast_karisik.jpg"
+            "description": "Domates, biber, sucuk ve peynirli karışık tost."
           },
           "kasarli": {
             "title": "Kaşarlı Tost",
-            "description": "Bol kaşarlı, çıtır çıtır tost.",
-            "image": "toast_kasarli.jpg"
+            "description": "Bol kaşarlı, çıtır çıtır tost."
           }
         }
       },
@@ -108,18 +95,15 @@
         "items": {
           "peynirli": {
             "title": "Peynirli",
-            "description": "Bol peynir dolgulu gözleme.",
-            "image": "gozleme_peynirli.jpg"
+            "description": "Bol peynir dolgulu gözleme."
           },
           "patatesli": {
             "title": "Patatesli",
-            "description": "Baharatlı patatesli gözleme.",
-            "image": "gozleme_patatesli.jpg"
+            "description": "Baharatlı patatesli gözleme."
           },
           "kasarli": {
             "title": "Kaşarlı",
-            "description": "Erimiş kaşarlı gözleme.",
-            "image": "gozleme_kasarli.jpg"
+            "description": "Erimiş kaşarlı gözleme."
           }
         }
       },
@@ -129,13 +113,11 @@
         "items": {
           "burger_combo": {
             "title": "Hamburger + Patates Kızartması + İçecek",
-            "description": "Lezzetli hamburger yanında patates ve içecek.",
-            "image": "burger_combo.jpg"
+            "description": "Lezzetli hamburger yanında patates ve içecek."
           },
           "cig_borek": {
             "title": "Çiğ Börek",
-            "description": "Klasik Çiğ Börek lezzeti.",
-            "image": "cig_borek.jpg"
+            "description": "Klasik Çiğ Börek lezzeti."
           }
         }
       },
@@ -145,18 +127,15 @@
         "items": {
           "bolonez": {
             "title": "Bolonez Soslu Makarna + İçecek",
-            "description": "Klasik Bolonez soslu makarna.",
-            "image": "bolonez.jpg"
+            "description": "Klasik Bolonez soslu makarna."
           },
           "penne": {
             "title": "Penne Soslu Makarna + İçecek",
-            "description": "Lezzetli penne soslu makarna.",
-            "image": "penne.jpg"
+            "description": "Lezzetli penne soslu makarna."
           },
           "manti": {
             "title": "Mantı",
-            "description": "Ev yapımı mantı, yoğurt ve sos ile.",
-            "image": "manti.jpg"
+            "description": "Ev yapımı mantı, yoğurt ve sos ile."
           }
         }
       },
@@ -166,23 +145,19 @@
         "items": {
           "kofte": {
             "title": "Göl Köftesi",
-            "description": "Izgara köfte, yanında salata ve patates kızartması.",
-            "image": "kofte.jpg"
+            "description": "Izgara köfte, yanında salata ve patates kızartması."
           },
           "citir_tavuk": {
             "title": "Çıtır Tavuk + Salata + Patates Kızartması",
-            "description": "Çıtır tavuk, salata ve patates eşliğinde.",
-            "image": "citir_tavuk.jpg"
+            "description": "Çıtır tavuk, salata ve patates eşliğinde."
           },
           "sucuk": {
             "title": "Sucuk + Salata + Patates Kızartması",
-            "description": "Izgara sucuk, salata ve patatesle.",
-            "image": "sucuk.jpg"
+            "description": "Izgara sucuk, salata ve patatesle."
           },
           "tavuk_kanat": {
             "title": "Tavuk Kanat + Salata + Patates Kızartması",
-            "description": "Lezzetli tavuk kanatları, salata ve patates.",
-            "image": "tavuk_kanat.jpg"
+            "description": "Lezzetli tavuk kanatları, salata ve patates."
           }
         }
       },
@@ -192,78 +167,63 @@
         "items": {
           "mineral": {
             "title": "Maden Suyu",
-            "description": "Serinletici maden suyu.",
-            "image": "mineral.jpg"
+            "description": "Serinletici maden suyu."
           },
           "fruit_mineral": {
             "title": "Meyveli Maden Suyu",
-            "description": "Meyve aromalı maden suyu.",
-            "image": "fruit_mineral.jpg"
+            "description": "Meyve aromalı maden suyu."
           },
           "cola_can": {
             "title": "Kola Kutu",
-            "description": "Klasik kola kutusu.",
-            "image": "cola_can.jpg"
+            "description": "Klasik kola kutusu."
           },
           "fanta_can": {
             "title": "Fanta Kutu",
-            "description": "Fanta meyveli gazoz kutusu.",
-            "image": "fanta_can.jpg"
+            "description": "Fanta meyveli gazoz kutusu."
           },
           "cola_bottle": {
             "title": "Kola Şişe",
-            "description": "Kola cam şişede.",
-            "image": "cola_bottle.jpg"
+            "description": "Kola cam şişede."
           },
           "uludag_gazoz": {
             "title": "Uludağ Gazoz",
-            "description": "Uludağ markalı gazoz.",
-            "image": "uludag_gazoz.jpg"
+            "description": "Uludağ markalı gazoz."
           },
           "lemonade": {
             "title": "Limonata",
-            "description": "Ev yapımı limonata.",
-            "image": "lemonade.jpg"
+            "description": "Ev yapımı limonata."
           },
           "ice_tea": {
             "title": "Ice Tea",
-            "description": "Soğuk buzlu çay.",
-            "image": "ice_tea.jpg"
+            "description": "Soğuk buzlu çay."
           },
           "ayran": {
             "title": "Ayran",
-            "description": "Yoğurtlu ferahlatıcı içecek.",
-            "image": "ayran.jpg"
+            "description": "Yoğurtlu ferahlatıcı içecek."
           },
           "water": {
             "title": "Su",
-            "description": "Doğal kaynak suyu.",
-            "image": "water.jpg"
+            "description": "Doğal kaynak suyu."
           },
           "fruit_juice": {
             "title": "Meyve Suyu",
-            "description": "Taze meyve suyu.",
-            "image": "fruit_juice.jpg"
+            "description": "Taze meyve suyu."
           },
           "frozen_varieties": {
             "title": "Frozen Çeşitleri",
-            "description": "Soğuk buzlu içecek çeşitleri.",
-            "image": "frozen_varieties.jpg"
+            "description": "Soğuk buzlu içecek çeşitleri."
           },
           "milkshake": {
             "title": "Milkshake",
-            "description": "Kremalı sütlü milkshake.",
-            "image": "milkshake.jpg"
+            "description": "Kremalı sütlü milkshake."
           },
           "iced_coffee": {
             "title": "Soğuk Kahve",
-            "description": "Buzlu soğuk kahve.",
-            "image": "iced_coffee.jpg"
+            "description": "Buzlu soğuk kahve."
           },
           "churchill": {
             "title": "Churchill",
-            "description": "Özel kahve karışımı.",
-            "image": "churchill.jpg"
+            "description": "Özel kahve karışımı."
           }
         }
       },
@@ -273,91 +233,87 @@
         "items": {
           "tea": {
             "title": "Çay",
-            "description": "Klasik siyah çay.",
-            "image": "tea.jpg"
+            "description": "Klasik siyah çay."
           },
           "turkish_coffee": {
             "title": "Türk Kahvesi",
-            "description": "Özel kavrulmuş Türk kahvesi.",
-            "image": "turkish_coffee.jpg"
+            "description": "Özel kavrulmuş Türk kahvesi."
           },
           "nescafe": {
             "title": "Neskafe",
-            "description": "Hızlı hazırlanabilen kahve.",
-            "image": "nescafe.jpg"
+            "description": "Hızlı hazırlanabilen kahve."
           },
           "filter_coffee": {
             "title": "Filtre Kahve",
-            "description": "Filtre kahve tadında.",
-            "image": "filter_coffee.jpg"
+            "description": "Filtre kahve tadında."
           },
           "espresso": {
             "title": "Espresso",
-            "description": "Yoğun aromalı espresso.",
-            "image": "espresso.jpg"
+            "description": "Yoğun aromalı espresso."
           },
           "doppio": {
             "title": "Doppio",
-            "description": "Çift shot espresso.",
-            "image": "doppio.jpg"
+            "description": "Çift shot espresso."
           },
           "herbal_tea": {
             "title": "Bitki Çayı",
-            "description": "Rahatlatıcı bitki çayı çeşitleri.",
-            "image": "herbal_tea.jpg"
+            "description": "Rahatlatıcı bitki çayı çeşitleri."
           },
           "hot_chocolate": {
             "title": "Sıcak Çikolata",
-            "description": "Sıcak ve kremalı çikolata.",
-            "image": "hot_chocolate.jpg"
+            "description": "Sıcak ve kremalı çikolata."
           },
           "sahlep": {
             "title": "Sahlep",
-            "description": "Kış aylarının favorisi sahlep.",
-            "image": "sahlep.jpg"
+            "description": "Kış aylarının favorisi sahlep."
           },
           "oralet": {
             "title": "Oralet",
-            "description": "Toz halinde meyveli içecek.",
-            "image": "oralet.jpg"
+            "description": "Toz halinde meyveli içecek."
           },
           "cinnamon": {
             "title": "Tarçın",
-            "description": "Tarçınlı sıcak içecek.",
-            "image": "cinnamon.jpg"
+            "description": "Tarçınlı sıcak içecek."
           },
           "cappuccino": {
             "title": "Cappuccino",
-            "description": "Sütlü köpüklü kahve.",
-            "image": "cappuccino.jpg"
+            "description": "Sütlü köpüklü kahve."
           },
           "mocha": {
             "title": "Mocha",
-            "description": "Çikolatalı kahve lezzeti.",
-            "image": "mocha.jpg"
+            "description": "Çikolatalı kahve lezzeti."
           },
           "americano": {
             "title": "Americano",
-            "description": "Sade ve hafif kahve.",
-            "image": "americano.jpg"
+            "description": "Sade ve hafif kahve."
           },
           "latte_macchiato": {
             "title": "Latte Macchiato",
-            "description": "Sütlü ve köpüklü kahve.",
-            "image": "latte_macchiato.jpg"
+            "description": "Sütlü ve köpüklü kahve."
           },
           "apa_colda": {
             "title": "Apa Colda",
-            "description": "Soğuk özel kahve karışımı.",
-            "image": "apa_colda.jpg"
+            "description": "Soğuk özel kahve karışımı."
           },
           "milk_coffee": {
             "title": "Sütlü Kahve",
-            "description": "Sütle hazırlanmış kahve.",
-            "image": "milk_coffee.jpg"
+            "description": "Sütle hazırlanmış kahve."
           }
         }
       }
     }
+  },
+
+  "allergens": {
+    "egg": "Yumurta",
+    "milk": "Süt",
+    "fish": "Balık",
+    "crustacean": "Kabuklu Deniz Ürünleri",
+    "peanut": "Yer Fıstığı",
+    "tree_nut": "Ağaç Yemişleri",
+    "soy": "Soya",
+    "gluten": "Gluten",
+    "sesame": "Susam",
+    "lactose": "Laktoz"
   }
 }
