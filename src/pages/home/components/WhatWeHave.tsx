@@ -1,87 +1,159 @@
-import { Button, Grid, Typography } from "@mui/material";
+import {
+  Button,
+  Grid,
+  Typography,
+  Card,
+  CardContent,
+  Box,
+} from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 export const WhatWeHave = () => {
+  const theme = useTheme();
+
+  const menuItems = [
+    {
+      title: "Gün Boyu Brunch",
+      image: "/images/penne.png",
+      color: "#FF6B6B",
+    },
+    {
+      title: "Hamur İşleri & Tatlılar",
+      image: "/images/penne.png",
+      color: "#4ECDC4",
+    },
+    {
+      title: "Kahve & İçecekler",
+      image: "/images/penne.png",
+      color: "#45B7D1",
+    },
+  ];
+
   return (
-    <Grid container justifyContent={"center"} p={10} spacing={10}>
+    <Grid
+      container
+      justifyContent="center"
+      sx={{
+        py: { xs: 6, md: 10 },
+        px: { xs: 2, md: 4 },
+      }}
+    >
       <Grid
-        size={{ xs: 6 }}
-        textAlign={"center"}
-        display={"flex"}
-        flexDirection={"column"}
-        alignItems={"center"}
-        gap={6}
+        size={{ xs: 12, md: 8, lg: 6 }}
+        sx={{
+          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: { xs: 4, md: 6 },
+          mb: { xs: 4, md: 6 },
+        }}
       >
-        <Typography variant="h2">What We Have</Typography>
-        <Typography variant="h4">
-          Crafted with the finest ingredients and a passion for flavor, our menu
-          offers a tantalizing array of coffee creations, freshly baked goods,
-          and savory bites.
+        <Typography
+          variant="h2"
+          sx={{
+            fontWeight: 600,
+            fontSize: { xs: "2rem", md: "3rem" },
+          }}
+        >
+          Neler Sunuyoruz
+        </Typography>
+        <Typography
+          variant="h4"
+          sx={{
+            lineHeight: 1.6,
+            fontSize: { xs: "1.1rem", md: "1.3rem" },
+            fontWeight: 400,
+            maxWidth: 800,
+          }}
+        >
+          En kaliteli malzemeler ve lezzet tutkusu ile hazırlanan menümüz,
+          büyüleyici kahve kreasyonları, taze pişmiş ürünler ve lezzetli
+          atıştırmalıklar sunuyor.
         </Typography>
       </Grid>
-      <Grid container spacing={5} px={20}>
-        <Grid
-          size={{ xs: 12, md: 4 }}
-          display={"flex"}
-          flexDirection={"column"}
-          alignItems={"center"}
-          gap={2}
-        >
-          <img
-            src={"/images/penne.png"}
-            style={{
-              width: "100%",
-              height: "auto",
-              display: "block",
-              aspectRatio: 1,
-              objectFit: "cover",
+
+      <Grid container spacing={{ xs: 3, md: 5 }} sx={{ px: { xs: 2, md: 10 } }}>
+        {menuItems.map((item, index) => (
+          <Grid
+            key={index}
+            size={{ xs: 12, md: 4 }}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: 2,
             }}
-          />
-          <Button variant="contained" size="large">
-            <Typography variant="h4">All-Day Brunch</Typography>
-          </Button>
-        </Grid>
-        <Grid
-          size={{ xs: 12, md: 4 }}
-          display={"flex"}
-          flexDirection={"column"}
-          alignItems={"center"}
-          gap={2}
-        >
-          <img
-            src={"/images/penne.png"}
-            style={{
-              width: "100%",
-              height: "auto",
-              display: "block",
-              aspectRatio: 1,
-              objectFit: "cover",
-            }}
-          />
-          <Button variant="contained" size="large">
-            <Typography variant="h4">Pasties & Sweets</Typography>
-          </Button>
-        </Grid>
-        <Grid
-          size={{ xs: 12, md: 4 }}
-          display={"flex"}
-          flexDirection={"column"}
-          alignItems={"center"}
-          gap={2}
-        >
-          <img
-            src={"/images/penne.png"}
-            style={{
-              width: "100%",
-              height: "auto",
-              display: "block",
-              aspectRatio: 1,
-              objectFit: "cover",
-            }}
-          />
-          <Button variant="contained" size="large">
-            <Typography variant="h4">Coffee & Drinks</Typography>
-          </Button>
-        </Grid>
+          >
+            <Card
+              sx={{
+                width: "100%",
+                border: `1px solid ${
+                  theme.palette.mode === "dark"
+                    ? "rgba(255,255,255,0.1)"
+                    : "rgba(255,255,255,0.3)"
+                }`,
+                transition: "all 0.3s ease",
+                overflow: "hidden",
+                position: "relative",
+                "&:hover": {
+                  transform: "translateY(-8px)",
+                  boxShadow: `0 20px 40px ${item.color}30`,
+                  "& .menu-image": {
+                    transform: "scale(1.1)",
+                  },
+                  "& .menu-button": {
+                    transform: "scale(1.05)",
+                    background: `linear-gradient(135deg, ${item.color}, ${item.color}dd)`,
+                  },
+                },
+              }}
+            >
+              <Box
+                sx={{
+                  overflow: "hidden",
+                  aspectRatio: 1,
+                }}
+              >
+                <Box
+                  component="img"
+                  src={item.image}
+                  alt={item.title}
+                  className="menu-image"
+                  sx={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    transition: "transform 0.3s ease",
+                  }}
+                />
+              </Box>
+              <CardContent sx={{ p: 3, textAlign: "center" }}>
+                <Button
+                  variant="contained"
+                  size="large"
+                  className="menu-button"
+                  sx={{
+                    background: `linear-gradient(135deg, ${item.color}dd, ${item.color})`,
+                    color: "white",
+                    borderRadius: 3,
+                    px: 4,
+                    py: 1.5,
+                    fontSize: { xs: "1rem", md: "1.2rem" },
+                    fontWeight: 600,
+                    transition: "all 0.3s ease",
+                    boxShadow: `0 4px 15px ${item.color}40`,
+                    "&:hover": {
+                      background: `linear-gradient(135deg, ${item.color}, ${item.color}dd)`,
+                    },
+                  }}
+                >
+                  {item.title}
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
       </Grid>
     </Grid>
   );

@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import { useTranslate } from "../../../../hooks/useTranslation";
-import type { MenuCategory } from "../../types";
+import type { MenuCategory } from "../../../../hooks/FirebaseMenuHooks";
 
 type Props = {
   category: MenuCategory;

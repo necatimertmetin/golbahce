@@ -26,7 +26,7 @@ export const ExtraItemCard = ({ categoryKey, itemKey, extra }: Props) => {
   // State ile src kontrolü (büyük resim için)
   const [mainSrc, setMainSrc] = useState(initialSrc);
   return (
-    <Grid size={{ xs: 4 }}>
+    <Grid>
       <Card sx={{ p: 2, borderRadius: 5, minHeight: "400px" }}>
         <img
           style={{

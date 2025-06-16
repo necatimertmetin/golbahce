@@ -1,4 +1,3 @@
-// allergents.tsx
 import {
   FaEgg,
   FaFish,

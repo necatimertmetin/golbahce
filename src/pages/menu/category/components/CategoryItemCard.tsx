@@ -48,19 +48,29 @@ export const CategoryItemCard = ({ categoryKey, item }: Props) => {
         xs: hasExtras ? 12 : 12,
         sm: hasExtras ? 12 : 6,
         md: hasExtras ? 12 : 4,
-        lg: hasExtras ? 12 : 3,
       }}
     >
-      <CardContent>
-        <Stack alignItems="center" spacing={2}>
+      <CardContent sx={{ p: { xs: 1, sm: 2, md: 3 } }}>
+        <Stack alignItems="center" spacing={{ xs: 1, sm: 2 }}>
           {hasExtras ? (
             <>
-              <Paper sx={{ p: 3, borderRadius: 5 }}>
-                <Stack direction="row" spacing={5}>
+              <Paper
+                sx={{
+                  p: { xs: 2, sm: 2.5, md: 3 },
+                  borderRadius: 5,
+                  width: "100%",
+                }}
+              >
+                <Stack
+                  direction={{ xs: "column", md: "row" }}
+                  spacing={{ xs: 2, sm: 3, md: 5 }}
+                  alignItems="center"
+                >
                   <img
                     style={{
-                      height: 300,
+                      height: 200,
                       width: "100%",
+                      maxWidth: 400,
                       borderRadius: 12,
                       objectFit: "cover",
                       flex: 1,
@@ -77,11 +87,22 @@ export const CategoryItemCard = ({ categoryKey, item }: Props) => {
                     textAlign="center"
                     alignItems="center"
                     justifyContent="center"
+                    spacing={{ xs: 1, sm: 2 }}
                   >
-                    <Typography variant="h6" fontWeight={600}>
+                    <Typography
+                      variant="h6"
+                      fontWeight={600}
+                      sx={{
+                        fontSize: { xs: "1.1rem", sm: "1.25rem" },
+                      }}
+                    >
                       {translate(`${categoryKey}.items.${item.key}.title`)}
                     </Typography>
-                    <Typography>
+                    <Typography
+                      sx={{
+                        fontSize: { xs: "0.875rem", sm: "1rem" },
+                      }}
+                    >
                       {translate(
                         `${categoryKey}.items.${item.key}.description`
                       )}
@@ -89,11 +110,18 @@ export const CategoryItemCard = ({ categoryKey, item }: Props) => {
                   </Stack>
                 </Stack>
               </Paper>
-              <Typography variant="h4" textAlign="center" py={5}>
+              <Typography
+                variant="h4"
+                textAlign="center"
+                py={{ xs: 2, sm: 3, md: 5 }}
+                sx={{
+                  fontSize: { xs: "1.5rem", sm: "1.75rem", md: "2rem" },
+                }}
+              >
                 Ekstralar
               </Typography>
 
-              <Grid container spacing={5}>
+              <Grid container spacing={{ xs: 2, sm: 3, md: 5 }}>
                 {item.extras!.map((extra) => (
                   <ExtraItemCard
                     key={extra.key}
@@ -105,7 +133,14 @@ export const CategoryItemCard = ({ categoryKey, item }: Props) => {
               </Grid>
             </>
           ) : (
-            <Card sx={{ p: 2, borderRadius: 5, minHeight: "400px" }}>
+            <Card
+              sx={{
+                p: { xs: 1.5, sm: 2 },
+                borderRadius: 5,
+                minHeight: { xs: "300px", sm: "350px", md: "400px" },
+                width: "100%",
+              }}
+            >
               <img
                 style={{
                   height: 200,
@@ -119,12 +154,26 @@ export const CategoryItemCard = ({ categoryKey, item }: Props) => {
                   if (mainSrc !== fallbackSrc) setMainSrc(fallbackSrc);
                 }}
               />
-              <CardContent>
-                <Stack alignItems="center" spacing={2} textAlign={"center"}>
-                  <Typography variant="h6" fontWeight={600}>
+              <CardContent sx={{ p: { xs: 1, sm: 2 } }}>
+                <Stack
+                  alignItems="center"
+                  spacing={{ xs: 1, sm: 2 }}
+                  textAlign={"center"}
+                >
+                  <Typography
+                    variant="h6"
+                    fontWeight={600}
+                    sx={{
+                      fontSize: { xs: "1.1rem", sm: "1.25rem" },
+                    }}
+                  >
                     {translate(`${categoryKey}.items.${item.key}.title`)}
                   </Typography>
-                  <Typography>
+                  <Typography
+                    sx={{
+                      fontSize: { xs: "0.875rem", sm: "1rem" },
+                    }}
+                  >
                     {translate(`${categoryKey}.items.${item.key}.description`)}
                   </Typography>
                 </Stack>

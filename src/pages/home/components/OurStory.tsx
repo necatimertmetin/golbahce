@@ -1,35 +1,69 @@
 import { Grid, Typography, Button } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 export const OurStory = () => {
+  const theme = useTheme();
+
   return (
-    <Grid container justifyContent={"center"} p={10}>
+    <Grid
+      container
+      justifyContent="center"
+      sx={{
+        py: { xs: 6, md: 10 },
+        px: { xs: 2, md: 4 },
+      }}
+    >
       <Grid
-        size={{ xs: 6 }}
-        textAlign={"center"}
-        display={"flex"}
-        flexDirection={"column"}
-        alignItems={"center"}
-        gap={6}
+        size={{ xs: 12, md: 8, lg: 6 }}
+        sx={{
+          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: { xs: 4, md: 6 },
+          borderRadius: 4,
+          p: { xs: 4, md: 6 },
+        }}
       >
-        <Typography variant="h2">Our Story</Typography>
-        <Typography variant="h4">
-          At the Golbahce, we believe a great coffee experience is about more
-          than just the brew. It's the cozy ambiance, varm hospitality, and
-          delightful treats that accompany each sip. Our cafe is a sanctuary
-          where you can escape the everyday hustle and indulge in the simple
-          pleasures of good company, aromatic coffee, and decadent pastries.
+        <Typography
+          variant="h2"
+          sx={{
+            fontWeight: 600,
+            fontSize: { xs: "2rem", md: "3rem" },
+          }}
+        >
+          Hikayemiz
+        </Typography>
+        <Typography
+          variant="h4"
+          sx={{
+            color: theme.palette.text.secondary,
+            lineHeight: 1.6,
+            fontSize: { xs: "1.1rem", md: "1.3rem" },
+            fontWeight: 400,
+          }}
+        >
+          Gölbahçe'de, harika bir kahve deneyiminin sadece demleme ile ilgili
+          olmadığına inanıyoruz. Bu samimi atmosfer, sıcak misafirperverlik ve
+          her yudumunuza eşlik eden lezzetli ikramlar. Kahvemiz, günlük
+          koşturmacadan kaçabileceğiniz, iyi bir arkadaşlık, aromatik kahve ve
+          nefis hamur işlerinin basit zevklerini yaşayabileceğiniz bir
+          sığınaktır.
         </Typography>
 
         <Button
           variant="outlined"
           size="large"
           sx={{
-            fontSize: "2rem",
-            px: "48px",
+            fontSize: { xs: "1.2rem", md: "1.5rem" },
+            px: { xs: 4, md: 6 },
+            py: { xs: 1.5, md: 2 },
             borderWidth: 2,
+            borderRadius: 3,
+            transition: "all 0.3s ease",
           }}
         >
-          About Us
+          Hakkımızda
         </Button>
       </Grid>
     </Grid>
