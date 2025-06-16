@@ -1,5 +1,7 @@
+import { collection, getDocs } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import type { JSX } from "react";
+import { db } from "../firebase/firebase";
 
 // Firebase'den gelecek veri tipleri
 export interface FirebaseCategory {
@@ -120,114 +122,31 @@ export async function fetchMenuDataFromFirebase(): Promise<{
   // Şimdilik mock data return edelim
 
   try {
-    // Gerçek implementasyonda burada Firestore'dan veri çekeceksiniz:
-    /*
-    const categoriesSnapshot = await db.collection('categories').get();
-    const menuItemsSnapshot = await db.collection('menu_items').get();
-    const extrasSnapshot = await db.collection('extras').get();
-    const allergensSnapshot = await db.collection('allergens').get();
-    */
+    const categoriesSnapshot = await getDocs(collection(db, "categories"));
+    const menuItemsSnapshot = await getDocs(collection(db, "menu_items"));
+    const extrasSnapshot = await getDocs(collection(db, "extras"));
+    const allergensSnapshot = await getDocs(collection(db, "allergens"));
 
-    // Mock data (Firebase yapısına uygun)
-    const categories: Record<string, FirebaseCategory> = {
-      breakfast: {
-        key: "breakfast",
-        name: "Kahvaltı",
-        image: "/images/menu/breakfast/breakfast.jpg",
-        order: 1,
-      },
-      toast: {
-        key: "toast",
-        name: "Tost",
-        image: "/images/menu/toast/toast.jpg",
-        order: 2,
-      },
-      gozleme: {
-        key: "gozleme",
-        name: "Gözleme",
-        image: "/images/menu/gozleme/gozleme.webp",
-        order: 3,
-      },
-      burger: {
-        key: "burger",
-        name: "Burger",
-        image: "/images/menu/burger/hamburger.jpg",
-        order: 4,
-      },
-      pasta: {
-        key: "pasta",
-        name: "Makarna",
-        image: "/images/menu/pasta/pasta.jpg",
-        order: 5,
-      },
-      grill: {
-        key: "grill",
-        name: "Izgara",
-        image: "/images/menu/grill/grill.jpg",
-        order: 6,
-      },
-      cold_drinks: {
-        key: "cold_drinks",
-        name: "Soğuk İçecekler",
-        image: "/images/menu/cold/cold.jpg",
-        order: 7,
-      },
-      hot_drinks: {
-        key: "hot_drinks",
-        name: "Sıcak İçecekler",
-        image: "/images/menu/hot/hot.jpg",
-        order: 8,
-      },
-    };
+    const categories: Record<string, FirebaseCategory> = {};
+    categoriesSnapshot.forEach((doc) => {
+      categories[doc.id] = doc.data() as FirebaseCategory;
+    });
 
-    const menuItems: Record<string, FirebaseMenuItem> = {
-      serpme_single: {
-        key: "serpme_single",
-        name: "Serpme Kahvaltı",
-        category: "breakfast",
-        price: 500,
-        allergens: ["egg", "milk", "gluten"],
-        hasExtras: true,
-        order: 1,
-      },
-      karisik: {
-        key: "karisik",
-        name: "Karışık Tost",
-        category: "toast",
-        price: 150,
-        allergens: ["milk", "gluten"],
-        order: 1,
-      },
-      kasarli: {
-        key: "kasarli",
-        name: "Kaşarlı Tost",
-        category: "toast",
-        price: 150,
-        allergens: ["milk", "gluten"],
-        order: 2,
-      },
-      // ... diğer öğeler
-    };
+    const menuItems: Record<string, FirebaseMenuItem> = {};
+    menuItemsSnapshot.forEach((doc) => {
+      menuItems[doc.id] = doc.data() as FirebaseMenuItem;
+    });
 
-    const extras: Record<string, FirebaseExtra> = {
-      egg_with_pastirma: {
-        key: "egg_with_pastirma",
-        name: "Pastırmalı Yumurta",
-        parentItem: "serpme_single",
-        price: 2.5,
-        allergens: ["egg", "milk"],
-        order: 1,
-      },
-      // ... diğer extras
-    };
+    const extras: Record<string, FirebaseExtra> = {};
+    extrasSnapshot.forEach((doc) => {
+      extras[doc.id] = doc.data() as FirebaseExtra;
+    });
 
-    const allergens: Record<string, FirebaseAllergen> = {
-      egg: { key: "egg", name: "Yumurta", color: "#FFE135", icon: "🥚" },
-      milk: { key: "milk", name: "Süt", color: "#FFFFFF", icon: "🥛" },
-      // ... diğer allergenler
-    };
+    const allergens: Record<string, FirebaseAllergen> = {};
+    allergensSnapshot.forEach((doc) => {
+      allergens[doc.id] = doc.data() as FirebaseAllergen;
+    });
 
-    // Dönüştür
     const menuData = convertFirebaseDataToMenuData(
       categories,
       menuItems,
