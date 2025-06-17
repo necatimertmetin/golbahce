@@ -14,6 +14,7 @@ export const AllergenIcons = ({ allergens = [] }: Props) => {
       direction={"row"}
       alignItems={"center"}
       justifyContent={"center"}
+      flexWrap={"wrap"}
       spacing={4}
       width={"100%"}
     >

@@ -6,5 +6,313 @@
       "about": "About Us",
       "contact": "Contact"
     }
+  },
+  "pages": {
+    "menu": {
+      "title": "Menu",
+      "price": "Price",
+      "extras": "extras",
+      "breakfast": {
+        "title": "Breakfasts",
+        "description": "Plates that can’t be finished for the most important meal of the day!! Big flavors…",
+        "items": {
+          "serpme_single": {
+            "title": "Turkish Breakfast (For One)",
+            "description": "Cheese (3 types), Greens Plate, Olives (2 types), Butter, Honey, Jam (2 types), Clotted Cream, Hot Plate (Fried Dough + Cigar Borek + French Fries), Early Harvest Olive Oil, Acuka - Walnut - Apricot",
+            "extras": {
+              "egg_with_pastirma": {
+                "title": "Egg with Pastrami",
+                "description": "Egg prepared with delicious pastrami."
+              },
+              "egg_with_sucuk": {
+                "title": "Egg with Turkish Sausage",
+                "description": "Delicious egg with Turkish sausage."
+              },
+              "menemen_varieties": {
+                "title": "Menemen Varieties",
+                "description": "Menemen made from fresh tomatoes, peppers, and eggs."
+              },
+              "omelet_varieties": {
+                "title": "Omelet Varieties",
+                "description": "Omelettes prepared with various ingredients."
+              },
+              "sucuk_plate": {
+                "title": "Turkish Sausage Plate",
+                "description": "Spicy Turkish sausage slices."
+              },
+              "sosis_plate": {
+                "title": "Sausage Plate",
+                "description": "Delicious sausage slices."
+              },
+              "chips_plate": {
+                "title": "Chips Plate",
+                "description": "Crispy potato chips."
+              },
+              "pisi_plate": {
+                "title": "Fried Dough Plate",
+                "description": "Fried dough pastry."
+              },
+              "sigara_boregi": {
+                "title": "Cigar Borek",
+                "description": "Thin borek rolls with filling."
+              },
+              "pacanga_boregi": {
+                "title": "Pastrami & Cheese Borek",
+                "description": "Borek with pastrami and cheese."
+              },
+              "kuymak": {
+                "title": "Kuymak",
+                "description": "Traditional dish also known as Mihlama."
+              },
+              "hellim": {
+                "title": "Halloumi",
+                "description": "Special dish prepared with Cypriot halloumi cheese."
+              }
+            }
+          },
+          "allergens": {
+            "egg": "Egg"
+          }
+        }
+      },
+      "toast": {
+        "title": "Toasts",
+        "description": "Not Simple, Legendary!",
+        "items": {
+          "karisik": {
+            "title": "Mixed",
+            "description": "Mixed toast with tomato, pepper, sausage, and cheese."
+          },
+          "kasarli": {
+            "title": "Cheese Toast",
+            "description": "Cheesy and crispy toast."
+          }
+        }
+      },
+      "gozleme": {
+        "title": "Gözlemes",
+        "description": "There’s Love on the Griddle!",
+        "items": {
+          "peynirli": {
+            "title": "Cheese",
+            "description": "Gözleme stuffed with cheese."
+          },
+          "patatesli": {
+            "title": "Potato",
+            "description": "Gözleme with seasoned potatoes."
+          },
+          "kasarli": {
+            "title": "Kashar Cheese",
+            "description": "Gözleme with melted Kashar cheese."
+          }
+        }
+      },
+      "burger": {
+        "title": "Burgers",
+        "description": "The Irresistible Duo: Burger & Fries Love!",
+        "items": {
+          "burger_combo": {
+            "title": "Burger + Fries + Drink",
+            "description": "Tasty burger with fries and a drink."
+          },
+          "cig_borek": {
+            "title": "Fried Borek",
+            "description": "Classic fried borek flavor."
+          }
+        }
+      },
+      "pasta": {
+        "title": "Pastas",
+        "description": "Big Flavors with 3 Types of Pasta!",
+        "items": {
+          "bolonez": {
+            "title": "Bolognese Pasta + Drink",
+            "description": "Classic pasta with Bolognese sauce."
+          },
+          "penne": {
+            "title": "Penne Pasta + Drink",
+            "description": "Delicious penne pasta."
+          },
+          "manti": {
+            "title": "Turkish Ravioli (Mantı)",
+            "description": "Homemade ravioli with yogurt and sauce."
+          }
+        }
+      },
+      "grill": {
+        "title": "Grills",
+        "description": "Flavors That Met with Fire!",
+        "items": {
+          "kofte": {
+            "title": "Lake Meatballs",
+            "description": "Grilled meatballs with salad and fries."
+          },
+          "citir_tavuk": {
+            "title": "Crispy Chicken + Salad + Fries",
+            "description": "Crispy chicken served with salad and fries."
+          },
+          "sucuk": {
+            "title": "Turkish Sausage + Salad + Fries",
+            "description": "Grilled sausage served with salad and fries."
+          },
+          "tavuk_kanat": {
+            "title": "Chicken Wings + Salad + Fries",
+            "description": "Tasty wings with salad and fries."
+          }
+        }
+      },
+      "cold_drinks": {
+        "title": "Cold Drinks",
+        "description": "A Refreshing Sip of Coolness!",
+        "items": {
+          "mineral": {
+            "title": "Mineral Water",
+            "description": "Refreshing mineral water."
+          },
+          "fruit_mineral": {
+            "title": "Fruit-Flavored Mineral Water",
+            "description": "Mineral water with fruit flavor."
+          },
+          "cola_can": {
+            "title": "Cola Can",
+            "description": "Classic cola in a can."
+          },
+          "fanta_can": {
+            "title": "Fanta Can",
+            "description": "Fruity soda in a can."
+          },
+          "cola_bottle": {
+            "title": "Cola Bottle",
+            "description": "Cola in a glass bottle."
+          },
+          "uludag_gazoz": {
+            "title": "Uludag Soda",
+            "description": "Uludag brand soda."
+          },
+          "lemonade": {
+            "title": "Lemonade",
+            "description": "Homemade lemonade."
+          },
+          "ice_tea": {
+            "title": "Iced Tea",
+            "description": "Chilled iced tea."
+          },
+          "ayran": {
+            "title": "Ayran",
+            "description": "Yogurt-based refreshing drink."
+          },
+          "water": {
+            "title": "Water",
+            "description": "Natural spring water."
+          },
+          "fruit_juice": {
+            "title": "Fruit Juice",
+            "description": "Freshly squeezed fruit juice."
+          },
+          "frozen_varieties": {
+            "title": "Frozen Varieties",
+            "description": "Chilled frozen drinks."
+          },
+          "milkshake": {
+            "title": "Milkshake",
+            "description": "Creamy milk-based shake."
+          },
+          "iced_coffee": {
+            "title": "Iced Coffee",
+            "description": "Chilled iced coffee."
+          },
+          "churchill": {
+            "title": "Churchill",
+            "description": "Special coffee blend."
+          }
+        }
+      },
+      "hot_drinks": {
+        "title": "Hot Drinks",
+        "description": "Soothing Even with Its Steam!",
+        "items": {
+          "tea": {
+            "title": "Tea",
+            "description": "Classic black tea."
+          },
+          "turkish_coffee": {
+            "title": "Turkish Coffee",
+            "description": "Specially roasted Turkish coffee."
+          },
+          "nescafe": {
+            "title": "Nescafe",
+            "description": "Instant coffee."
+          },
+          "filter_coffee": {
+            "title": "Filter Coffee",
+            "description": "Rich flavored filter coffee."
+          },
+          "espresso": {
+            "title": "Espresso",
+            "description": "Strong flavored espresso."
+          },
+          "doppio": {
+            "title": "Doppio",
+            "description": "Double shot espresso."
+          },
+          "herbal_tea": {
+            "title": "Herbal Tea",
+            "description": "Soothing herbal tea varieties."
+          },
+          "hot_chocolate": {
+            "title": "Hot Chocolate",
+            "description": "Hot and creamy chocolate."
+          },
+          "sahlep": {
+            "title": "Sahlep",
+            "description": "Winter favorite sahlep drink."
+          },
+          "oralet": {
+            "title": "Oralet",
+            "description": "Powdered fruity drink."
+          },
+          "cinnamon": {
+            "title": "Cinnamon",
+            "description": "Hot cinnamon beverage."
+          },
+          "cappuccino": {
+            "title": "Cappuccino",
+            "description": "Frothy milk coffee."
+          },
+          "mocha": {
+            "title": "Mocha",
+            "description": "Chocolate flavored coffee."
+          },
+          "americano": {
+            "title": "Americano",
+            "description": "Light and plain coffee."
+          },
+          "latte_macchiato": {
+            "title": "Latte Macchiato",
+            "description": "Milky and frothy coffee."
+          },
+          "apa_colda": {
+            "title": "Apa Colda",
+            "description": "Special cold coffee blend."
+          },
+          "milk_coffee": {
+            "title": "Milk Coffee",
+            "description": "Coffee prepared with milk."
+          }
+        }
+      }
+    }
+  },
+  "allergens": {
+    "egg": "Egg",
+    "milk": "Milk",
+    "fish": "Fish",
+    "crustacean": "Crustacean",
+    "peanut": "Peanut",
+    "tree_nut": "Tree Nuts",
+    "soy": "Soy",
+    "gluten": "Gluten",
+    "sesame": "Sesame",
+    "lactose": "Lactose"
   }
 }

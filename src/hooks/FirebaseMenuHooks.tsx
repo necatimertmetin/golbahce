@@ -1,4 +1,4 @@
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import type { JSX } from "react";
 import { db } from "../firebase/firebase";
@@ -67,30 +67,23 @@ export interface MenuCategory {
   key: string;
   image: string;
   items: MenuItem[];
+  order: number;
 }
 
-// Firebase verilerini uygulamada kullanılacak formata dönüştüren fonksiyonlar
+// Firebase verilerini uygulamada kullanılacak formata dönüştüren fonksiyon
 export function convertFirebaseDataToMenuData(
   categories: Record<string, FirebaseCategory>,
   menuItems: Record<string, FirebaseMenuItem>,
   extras: Record<string, FirebaseExtra>
 ): MenuCategory[] {
-  // Kategorileri sıraya koy
-  const sortedCategories = Object.values(categories).sort(
-    (a, b) => a.order - b.order
-  );
+  return Object.values(categories).map((category) => {
+    const categoryItems = Object.values(menuItems).filter(
+      (item) => item.category === category.key
+    );
 
-  return sortedCategories.map((category) => {
-    // Bu kategoriye ait menü öğelerini bul
-    const categoryItems = Object.values(menuItems)
-      .filter((item) => item.category === category.key)
-      .sort((a, b) => a.order - b.order);
-
-    // Her menü öğesi için extras'ları bul
     const itemsWithExtras: MenuItem[] = categoryItems.map((item) => {
       const itemExtras = Object.values(extras)
         .filter((extra) => extra.parentItem === item.key)
-        .sort((a, b) => a.order - b.order)
         .map((extra) => ({
           key: extra.key,
           price: extra.price,
@@ -108,23 +101,25 @@ export function convertFirebaseDataToMenuData(
     return {
       key: category.key,
       image: category.image,
+      order: category.order,
       items: itemsWithExtras,
     };
   });
 }
 
-// Firebase'den veri çekme fonksiyonu (mock data ile)
+// Firebase'den veri çekme fonksiyonu (sıralama eklendi)
 export async function fetchMenuDataFromFirebase(): Promise<{
   menuData: MenuCategory[];
   allergenData: Record<AllergenKey, Allergen>;
 }> {
-  // Bu fonksiyonu Firebase SDK ile implement edeceksiniz
-  // Şimdilik mock data return edelim
-
   try {
-    const categoriesSnapshot = await getDocs(collection(db, "categories"));
-    const menuItemsSnapshot = await getDocs(collection(db, "menu_items"));
-    const extrasSnapshot = await getDocs(collection(db, "extras"));
+    const categoriesSnapshot = await getDocs(
+      query(collection(db, "categories"), orderBy("order"))
+    );
+    const menuItemsSnapshot = await getDocs(
+      query(collection(db, "menu_items"))
+    );
+    const extrasSnapshot = await getDocs(query(collection(db, "extras")));
     const allergensSnapshot = await getDocs(collection(db, "allergens"));
 
     const categories: Record<string, FirebaseCategory> = {};
@@ -161,6 +156,7 @@ export async function fetchMenuDataFromFirebase(): Promise<{
   }
 }
 
+// Alerjen dönüştürücü fonksiyon
 export function convertFirebaseAllergensToAllergens(
   firebaseAllergens: Record<string, FirebaseAllergen>
 ): Record<AllergenKey, Allergen> {
@@ -180,8 +176,7 @@ export function convertFirebaseAllergensToAllergens(
   return result;
 }
 
-// Custom hook - mevcut kodunuzda direkt kullanabilirsiniz
-// Custom hook - fixed version
+// Custom hook
 export function useMenuData() {
   const [menuData, setMenuData] = useState<MenuCategory[]>([]);
   const [allergens, setAllergens] = useState<Record<AllergenKey, Allergen>>(
@@ -205,27 +200,3 @@ export function useMenuData() {
 
   return { menuData, allergens, loading, error };
 }
-
-// Fallback - eğer Firebase'den veri gelmediyse eski static veriyi kullan
-export const fallbackMenuData: MenuCategory[] = [
-  {
-    key: "breakfast",
-    image: "/images/menu/breakfast/breakfast.jpg",
-    items: [
-      {
-        key: "serpme_single",
-        price: 500,
-        allergens: ["egg", "milk", "gluten"],
-        extras: [
-          { key: "egg_with_pastirma", price: 2.5, allergens: ["egg", "milk"] },
-          { key: "egg_with_sucuk", price: 2.4, allergens: ["egg"] },
-          // ... diğer extras
-        ],
-      },
-    ],
-  },
-  // ... diğer kategoriler
-];
-
-// Export - mevcut kodunuz için
-export const menuData = fallbackMenuData; // Geçici - hook kullanımına geçene kadar

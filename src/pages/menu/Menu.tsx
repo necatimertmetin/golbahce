@@ -16,6 +16,7 @@ export const MenuPage = () => {
   const { translate } = useTranslate("pages.menu");
   const { menuData, loading, error } = useMenuData();
   const theme = useTheme();
+
   // Loading state
   if (loading) {
     return (

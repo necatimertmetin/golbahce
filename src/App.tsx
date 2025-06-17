@@ -13,6 +13,7 @@ import { About } from "./pages/about/About";
 import { Contact } from "./pages/contact/Contact";
 import MenuPage from "./pages/menu/Menu";
 import { CategoryPage } from "./pages/menu/category/Category";
+import { QRMenuPage } from "./pages/qr/QrMenu";
 
 const rtlLanguages = ["ar", "he", "fa", "ur"];
 
@@ -49,6 +50,7 @@ function AppContent() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/menu" element={<MenuPage />} />
             <Route path="/menu/:categoryKey" element={<CategoryPage />} />
+            <Route path="/m" element={<QRMenuPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
