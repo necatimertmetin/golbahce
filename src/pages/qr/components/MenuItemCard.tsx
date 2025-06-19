@@ -28,13 +28,11 @@ export const MenuItemCard = ({
   return (
     <Fade in timeout={300}>
       <Paper
-        elevation={0}
+        variant="outlined"
         sx={{
           p: 2.5,
           mb: 2,
           borderRadius: 3,
-          border: "1px solid #e0e0e0",
-          bgcolor: "white",
           transition: "all 0.3s ease",
         }}
       >
@@ -59,7 +57,6 @@ export const MenuItemCard = ({
                 variant="h6"
                 sx={{
                   fontWeight: "600",
-                  color: "#1a1a1a",
                   mb: 1,
                   fontSize: "1.1rem",
                   lineHeight: 1.3,
@@ -115,21 +112,17 @@ export const MenuItemCard = ({
               sx={{
                 mt: 2,
                 p: 2,
-                bgcolor: "#fafafa",
                 borderRadius: 2,
-                border: "1px solid #e0e0e0",
               }}
             >
               <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
                 {item.extras.map((extra) => (
                   <Paper
                     key={extra.key}
-                    elevation={0}
+                    variant="outlined"
                     sx={{
                       p: 1.5,
-                      bgcolor: "white",
                       borderRadius: 2,
-                      border: "1px solid #e8e8e8",
                     }}
                   >
                     <Box
@@ -141,10 +134,9 @@ export const MenuItemCard = ({
                       }}
                     >
                       <Typography
-                        variant="body2"
+                        variant="body1"
                         sx={{
                           fontWeight: "500",
-                          color: "#1a1a1a",
                         }}
                       >
                         {translate(

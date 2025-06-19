@@ -25,9 +25,7 @@ export const MenuCategoryCard = ({
       <Accordion
         defaultExpanded={false}
         sx={{
-          borderRadius: "12px !important",
           overflow: "hidden",
-          border: "1px solid #e0e0e0",
           boxShadow: "0 4px 16px rgba(0,0,0,0.08)",
           transition: "all 0.3s ease",
         }}
@@ -60,7 +58,6 @@ export const MenuCategoryCard = ({
                 component="h2"
                 sx={{
                   fontWeight: "700",
-                  color: "#1a1a1a",
                   textTransform: "capitalize",
                   fontSize: { xs: "1.3rem", sm: "1.5rem" },
                   mb: 0.5,
