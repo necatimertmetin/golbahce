@@ -14,55 +14,72 @@ import LocalFloristIcon from "@mui/icons-material/LocalFlorist";
 import PoolIcon from "@mui/icons-material/Pool";
 import SpaIcon from "@mui/icons-material/Spa";
 import { useTheme } from "@mui/material/styles";
+import { useTranslate } from "../../hooks/useTranslation";
 
 export const About = () => {
   const theme = useTheme();
+  const { translate } = useTranslate("pages.about");
 
   const features = [
     {
       icon: <NatureIcon />,
-      title: "Doğal Güzellik",
-      description: "Yeşillikler içinde, doğa ile iç içe huzurlu bir ortam",
+      title: translate("features.nature.title"),
+      description: translate("features.nature.description"),
       color: "#4ECDC4",
     },
     {
       icon: <GroupsIcon />,
-      title: "Aile Dostu",
-      description:
-        "Her yaştan misafirimiz için özel olarak tasarlanmış alanlar",
+      title: translate("features.family.title"),
+      description: translate("features.family.description"),
       color: "#FF6B6B",
     },
     {
       icon: <RestaurantIcon />,
-      title: "Lezzetli Mutfak",
-      description: "Geleneksel ve modern lezzetlerin buluştuğu özel menümüz",
+      title: translate("features.kitchen.title"),
+      description: translate("features.kitchen.description"),
       color: "#45B7D1",
     },
     {
       icon: <LocalFloristIcon />,
-      title: "Botanik Bahçe",
-      description: "Nadir bitki türleri ve çiçeklerle dolu renkli bahçemiz",
+      title: translate("features.garden.title"),
+      description: translate("features.garden.description"),
       color: "#96CEB4",
     },
     {
       icon: <PoolIcon />,
-      title: "Su Sporları",
-      description: "Yüzme havuzu ve çeşitli su aktiviteleri imkanı",
+      title: translate("features.pool.title"),
+      description: translate("features.pool.description"),
       color: "#9B59B6",
     },
     {
       icon: <SpaIcon />,
-      title: "Dinlence Alanları",
-      description: "Stres atmak ve rahatlmak için özel dinlence bölgeleri",
+      title: translate("features.spa.title"),
+      description: translate("features.spa.description"),
       color: "#F39C12",
     },
   ];
 
   const stats = [
-    { number: "15+", label: "Yıllık Deneyim", color: "#FF6B6B" },
-    { number: "50K+", label: "Mutlu Misafir", color: "#4ECDC4" },
-    { number: "25", label: "Farklı Aktivite", color: "#45B7D1" },
-    { number: "12", label: "Ödül & Sertifika", color: "#96CEB4" },
+    {
+      number: translate("stats.experience.number"),
+      label: translate("stats.experience.label"),
+      color: "#FF6B6B",
+    },
+    {
+      number: translate("stats.guests.number"),
+      label: translate("stats.guests.label"),
+      color: "#4ECDC4",
+    },
+    {
+      number: translate("stats.activities.number"),
+      label: translate("stats.activities.label"),
+      color: "#45B7D1",
+    },
+    {
+      number: translate("stats.awards.number"),
+      label: translate("stats.awards.label"),
+      color: "#96CEB4",
+    },
   ];
 
   return (
@@ -84,7 +101,7 @@ export const About = () => {
               mb: 2,
             }}
           >
-            Hakkımızda
+            {translate("title")}
           </Typography>
           <Typography
             variant="h6"
@@ -95,8 +112,7 @@ export const About = () => {
               lineHeight: 1.6,
             }}
           >
-            Gölbahçe Tesisleri olarak, doğanın kalbinde unutulmaz anlar yaşatmak
-            için buradayız
+            {translate("subtitle")}
           </Typography>
         </Box>
 
@@ -110,7 +126,6 @@ export const About = () => {
             <Card
               sx={{
                 height: "100%",
-
                 backdropFilter: "blur(10px)",
                 border: `1px solid ${
                   theme.palette.mode === "dark"
@@ -127,11 +142,10 @@ export const About = () => {
                   sx={{
                     fontWeight: 600,
                     mb: 3,
-
                     fontSize: { xs: "1.5rem", sm: "1.8rem", md: "2rem" },
                   }}
                 >
-                  Hikayemiz
+                  {translate("story.title")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -142,10 +156,7 @@ export const About = () => {
                     fontSize: { xs: "0.95rem", sm: "1rem" },
                   }}
                 >
-                  2008 yılında başlayan yolculuğumuzda, İstanbul'un kalbinde
-                  doğal güzellikleri koruyarak, misafirlerimize huzurlu ve
-                  keyifli vakit geçirebilecekleri bir alan yaratma hedefiyle
-                  yola çıktık.
+                  {translate("story.paragraph1")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -156,11 +167,7 @@ export const About = () => {
                     fontSize: { xs: "0.95rem", sm: "1rem" },
                   }}
                 >
-                  Bugün, 15 yılı aşkın deneyimimizle, ailelerin, çiftlerin ve
-                  arkadaş gruplarının unutulmaz anılar biriktirdikleri bir mekan
-                  haline geldik. Doğaya saygılı, sürdürülebilir turizm
-                  anlayışımızla, gelecek nesillere temiz bir çevre bırakma
-                  sorumluluğunu taşıyoruz.
+                  {translate("story.paragraph2")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -170,10 +177,7 @@ export const About = () => {
                     fontSize: { xs: "0.95rem", sm: "1rem" },
                   }}
                 >
-                  Misyon olarak, şehrin stresinden uzaklaşmak isteyen herkese
-                  doğal bir kaçış noktası sunmak, geleneksel Türk
-                  misafirperverliğini modern konforsuz harmanlayarak unutulmaz
-                  deneyimler yaşatmaktır.
+                  {translate("story.paragraph3")}
                 </Typography>
               </CardContent>
             </Card>
@@ -191,7 +195,7 @@ export const About = () => {
               <Box
                 component="img"
                 src="https://picsum.photos/800/600?random=1"
-                alt="Gölbahçe Tesisleri Genel Görünüm"
+                alt={translate("story.imageAlt")}
                 sx={{
                   width: "100%",
                   height: "100%",
@@ -217,7 +221,7 @@ export const About = () => {
               fontSize: { xs: "1.5rem", sm: "2rem" },
             }}
           >
-            Rakamlarla Gölbahçe
+            {translate("statsTitle")}
           </Typography>
           <Grid container spacing={{ xs: 2, sm: 3 }}>
             {stats.map((stat, index) => (
@@ -284,7 +288,7 @@ export const About = () => {
               fontSize: { xs: "1.5rem", sm: "2rem" },
             }}
           >
-            Özelliklerimiz
+            {translate("featuresTitle")}
           </Typography>
           <Grid container spacing={{ xs: 2.5, sm: 3, md: 4 }}>
             {features.map((feature, index) => (

@@ -1,9 +1,10 @@
 import { Grid, Typography, Button } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { useTranslate } from "../../../hooks/useTranslation";
 
 export const OurStory = () => {
   const theme = useTheme();
-
+  const { translate } = useTranslate("pages.home.ourStory");
   return (
     <Grid
       container
@@ -32,7 +33,7 @@ export const OurStory = () => {
             fontSize: { xs: "2rem", md: "3rem" },
           }}
         >
-          Hikayemiz
+          {translate("title")}
         </Typography>
         <Typography
           variant="h4"
@@ -43,12 +44,7 @@ export const OurStory = () => {
             fontWeight: 400,
           }}
         >
-          Gölbahçe'de, harika bir kahve deneyiminin sadece demleme ile ilgili
-          olmadığına inanıyoruz. Bu samimi atmosfer, sıcak misafirperverlik ve
-          her yudumunuza eşlik eden lezzetli ikramlar. Kahvemiz, günlük
-          koşturmacadan kaçabileceğiniz, iyi bir arkadaşlık, aromatik kahve ve
-          nefis hamur işlerinin basit zevklerini yaşayabileceğiniz bir
-          sığınaktır.
+          {translate("description")}
         </Typography>
 
         <Button
@@ -63,7 +59,7 @@ export const OurStory = () => {
             transition: "all 0.3s ease",
           }}
         >
-          Hakkımızda
+          {translate("aboutUs")}
         </Button>
       </Grid>
     </Grid>

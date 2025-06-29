@@ -7,27 +7,33 @@ import {
   Box,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { useTranslate } from "../../../hooks/useTranslation";
+import { useMemo } from "react";
 
 export const WhatWeHave = () => {
   const theme = useTheme();
+  const { translate } = useTranslate("pages.home.whatWeHave");
 
-  const menuItems = [
-    {
-      title: "Gün Boyu Brunch",
-      image: "/images/penne.png",
-      color: "#FF6B6B",
-    },
-    {
-      title: "Hamur İşleri & Tatlılar",
-      image: "/images/penne.png",
-      color: "#4ECDC4",
-    },
-    {
-      title: "Kahve & İçecekler",
-      image: "/images/penne.png",
-      color: "#45B7D1",
-    },
-  ];
+  const menuItems = useMemo(
+    () => [
+      {
+        title: translate("items.gozleme"),
+        image: "/images/penne.png",
+        color: "#FF6B6B",
+      },
+      {
+        title: translate("items.kahvalti"),
+        image: "/images/penne.png",
+        color: "#4ECDC4",
+      },
+      {
+        title: translate("items.izgara"),
+        image: "/images/penne.png",
+        color: "#45B7D1",
+      },
+    ],
+    [translate]
+  );
 
   return (
     <Grid
@@ -56,7 +62,7 @@ export const WhatWeHave = () => {
             fontSize: { xs: "2rem", md: "3rem" },
           }}
         >
-          Neler Sunuyoruz
+          {translate("title")}
         </Typography>
         <Typography
           variant="h4"

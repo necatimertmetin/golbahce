@@ -1,5 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
+import { useTranslate } from "../../../hooks/useTranslation";
 export const Hero = () => {
+  const { translate } = useTranslate("pages.home.hero");
   return (
     <Box>
       <Box
@@ -40,7 +42,7 @@ export const Hero = () => {
             border: "1px solid rgba(255,255,255,0.2)",
           }}
         >
-          Göl manzarasında güne taptaze kahvaltıyla başla!
+          {translate("title")}
         </Typography>
 
         <Button
@@ -66,7 +68,7 @@ export const Hero = () => {
             variant="h4"
             sx={{ fontSize: { xs: "1rem", md: "1.5rem" } }}
           >
-            Menu
+            {translate("menu")}
           </Typography>
         </Button>
       </Box>

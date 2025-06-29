@@ -2,9 +2,11 @@ import { Typography, Link, Stack, Container, Card } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import StarIcon from "@mui/icons-material/Star";
 import { useTheme } from "@mui/material/styles";
+import { useTranslate } from "../../../hooks/useTranslation";
 
 export const Social = () => {
   const theme = useTheme();
+  const { translate } = useTranslate("pages.home.social");
 
   return (
     <Container
@@ -73,7 +75,7 @@ export const Social = () => {
               maxWidth: { xs: "100%", md: "auto" },
             }}
           >
-            Deneyimlerinizi{" "}
+            {translate("text.prefix")}{" "}
             <Link
               href="https://www.instagram.com/golbahcetesisleri/"
               target="_blank"
@@ -95,7 +97,7 @@ export const Social = () => {
             >
               #golbahcetesisleri
             </Link>{" "}
-            ile bizimle paylaşın
+            {translate("text.suffix")}
           </Typography>
 
           <StarIcon

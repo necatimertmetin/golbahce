@@ -1,13 +1,78 @@
 {
+  "seo": {
+    "home": {
+      "title": "Ana Sayfa | Golbahçe",
+      "desc": "Golbahçe restoranına hoş geldiniz. Lezzetli yemekler ve eşsiz atmosfer sizi bekliyor.",
+      "ogTitle": "Golbahçe Restaurant - Ana Sayfa",
+      "ogDesc": "En taze malzemelerle hazırlanan nefis yemeklerimizi keşfedin."
+    },
+    "about": {
+      "title": "Hakkımızda | Golbahçe",
+      "desc": "Golbahçe'nin hikayesi, misyonu ve vizyonu hakkında bilgi alın.",
+      "ogTitle": "Hakkımızda - Golbahçe",
+      "ogDesc": "Yılların deneyimi ve tutkuyla hazırlanan lezzetlerimizin hikayesi."
+    },
+    "contact": {
+      "title": "İletişim | Golbahçe",
+      "desc": "Golbahçe ile iletişime geçin. Adres, telefon ve rezervasyon bilgileri.",
+      "ogTitle": "İletişim - Golbahçe",
+      "ogDesc": "Bize ulaşın, rezervasyon yapın ve sorularınızı iletin."
+    },
+    "products": {
+      "title": "Ürünlerimiz | Golbahçe",
+      "desc": "Golbahçe'nin özel ürünleri ve lezzetleri hakkında bilgi alın.",
+      "ogTitle": "Ürünlerimiz - Golbahçe",
+      "ogDesc": "Özenle seçilmiş malzemelerle hazırlanan özel ürünlerimiz."
+    },
+    "menu": {
+      "title": "Menü | Golbahçe",
+      "desc": "Golbahçe menüsü - Ana yemekler, başlangıçlar, tatlılar ve içecekler.",
+      "ogTitle": "Menü - Golbahçe",
+      "ogDesc": "Zengin menümüzden damak zevkinize uygun lezzetleri seçin."
+    },
+    "default": {
+      "title": "Golbahçe Restaurant",
+      "desc": "Golbahçe - Lezzet ve kalitenin buluştuğu nokta.",
+      "ogTitle": "Golbahçe Restaurant",
+      "ogDesc": "Eşsiz lezzetler ve unutulmaz deneyimler için Golbahçe'yi ziyaret edin."
+    }
+  },
   "layout": {
     "header": {
       "homepage": "Anasayfa",
       "menu": "Menü",
       "about": "Hakkımızda",
+      "product": "ÜRÜNLERİMİZ",
       "contact": "İletişim"
     }
   },
   "pages": {
+    "home": {
+      "hero": {
+        "title": "Göl manzarasında güne taptaze kahvaltıyla başla!",
+        "menu": "Menü"
+      },
+      "ourStory": {
+        "title": "Hikayemiz",
+        "description": "Gölbahçe'de, harika bir kahve deneyiminin sadece demleme ile ilgili olmadığına inanıyoruz. Bu samimi atmosfer, sıcak misafirperverlik ve her yudumunuza eşlik eden lezzetli ikramlar. Kahvemiz, günlük koşturmacadan kaçabileceğiniz, iyi bir arkadaşlık, aromatik kahve ve nefis hamur işlerinin basit zevklerini yaşayabileceğiniz bir sığınaktır.",
+        "aboutUs": "Hakkımızda"
+      },
+      "whatWeHave": {
+        "title": "Neler Sunuyoruz",
+        "subtitle": "En kaliteli malzemeler ve lezzet tutkusu ile hazırlanan menümüz, büyüleyici kahve kreasyonları, taze pişmiş ürünler ve lezzetli atıştırmalıklar sunuyor.",
+        "items": {
+          "gozleme": "Gözleme",
+          "kahvalti": "Kahvaltı",
+          "izgara": "Izgara"
+        }
+      },
+      "social": {
+        "text": {
+          "prefix": "Deneyimlerinizi",
+          "suffix": "ile bizimle paylaşın"
+        }
+      }
+    },
     "menu": {
       "title": "Menü",
       "price": "Fiyat",
@@ -303,6 +368,122 @@
           }
         }
       }
+    },
+    "products": {
+      "title": "Ürünlerimiz",
+      "subtitle": "Geleneksel üretim yöntemleriyle, doğal ve kaliteli ürünlerimizi keşfedin",
+      "featuresLabel": "Özellikler",
+      "items": {
+        "olives": {
+          "title": "Premium Zeytin Çeşitleri",
+          "description": "Geleneksel yöntemlerle işlenmiş, doğal ve lezzetli zeytinlerimiz",
+          "features": [
+            "Doğal İşleme",
+            "Çeşitli Boyutlar",
+            "Taze Hasat",
+            "Geleneksel Tarif"
+          ]
+        },
+        "oil": {
+          "title": "Soğuk Sıkım Zeytinyağı",
+          "description": "Birinci sınıf soğuk sıkım zeytinyağı, doğal aroması ile",
+          "features": [
+            "Soğuk Sıkım",
+            "0.5 Asit Oranı",
+            "Doğal Aroma",
+            "Cam Şişe"
+          ]
+        },
+        "ceramics": {
+          "title": "El Yapımı Çini Ürünleri",
+          "description": "Ustalarımızın elinden çıkan özgün desenli çini sanat eserleri",
+          "features": [
+            "El Yapımı",
+            "Özgün Desen",
+            "Kaliteli Malzeme",
+            "Geleneksel Teknik"
+          ]
+        }
+      }
+    },
+    "about": {
+      "title": "Hakkımızda",
+      "subtitle": "Gölbahçe Tesisleri olarak, doğanın kalbinde unutulmaz anlar yaşatmak için buradayız",
+      "story": {
+        "title": "Hikayemiz",
+        "paragraph1": "2008 yılında başlayan yolculuğumuzda, İstanbul'un kalbinde doğal güzellikleri koruyarak, misafirlerimize huzurlu ve keyifli vakit geçirebilecekleri bir alan yaratma hedefiyle yola çıktık.",
+        "paragraph2": "Bugün, 15 yılı aşkın deneyimimizle, ailelerin, çiftlerin ve arkadaş gruplarının unutulmaz anılar biriktirdikleri bir mekan haline geldik. Doğaya saygılı, sürdürülebilir turizm anlayışımızla, gelecek nesillere temiz bir çevre bırakma sorumluluğunu taşıyoruz.",
+        "paragraph3": "Misyon olarak, şehrin stresinden uzaklaşmak isteyen herkese doğal bir kaçış noktası sunmak, geleneksel Türk misafirperverliğini modern konforla harmanlayarak unutulmaz deneyimler yaşatmaktır.",
+        "imageAlt": "Gölbahçe Tesisleri Genel Görünüm"
+      },
+      "statsTitle": "Rakamlarla Gölbahçe",
+      "stats": {
+        "experience": {
+          "number": "15+",
+          "label": "Yıllık Deneyim"
+        },
+        "guests": {
+          "number": "50K+",
+          "label": "Mutlu Misafir"
+        },
+        "activities": {
+          "number": "25",
+          "label": "Farklı Aktivite"
+        },
+        "awards": {
+          "number": "12",
+          "label": "Ödül & Sertifika"
+        }
+      },
+      "featuresTitle": "Özelliklerimiz",
+      "features": {
+        "nature": {
+          "title": "Doğal Güzellik",
+          "description": "Yeşillikler içinde, doğa ile iç içe huzurlu bir ortam"
+        },
+        "family": {
+          "title": "Aile Dostu",
+          "description": "Her yaştan misafirimiz için özel olarak tasarlanmış alanlar"
+        },
+        "kitchen": {
+          "title": "Lezzetli Mutfak",
+          "description": "Geleneksel ve modern lezzetlerin buluştuğu özel menümüz"
+        },
+        "garden": {
+          "title": "Botanik Bahçe",
+          "description": "Nadir bitki türleri ve çiçeklerle dolu renkli bahçemiz"
+        },
+        "pool": {
+          "title": "Su Sporları",
+          "description": "Yüzme havuzu ve çeşitli su aktiviteleri imkanı"
+        },
+        "spa": {
+          "title": "Dinlence Alanları",
+          "description": "Stres atmak ve rahatlamak için özel dinlence bölgeleri"
+        }
+      }
+    },
+    "contact": {
+      "title": "İletişim",
+      "subtitle": "Bizimle iletişime geçin, sorularınızı yanıtlayalım.",
+      "address": {
+        "title": "Adres",
+        "content": "1234 Golbahce Street, Istanbul, Turkey"
+      },
+      "hours": {
+        "title": "Çalışma Saatleri",
+        "content": "08:00 - 21:00"
+      },
+      "phone": {
+        "title": "Telefon",
+        "content": "+90 123 456 7890"
+      },
+      "email": {
+        "title": "E-posta",
+        "content": "info@golbahce.com"
+      },
+      "ctaTitle": "Rezervasyon İçin",
+      "ctaSubtitle": "Bizi arayın veya doğrudan ziyaret edin"
     }
   },
 

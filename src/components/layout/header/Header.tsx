@@ -54,6 +54,7 @@ export const Header = () => {
     { label: translate("homepage"), path: "/" },
     { label: translate("menu"), path: "/menu" },
     { label: translate("about"), path: "/about" },
+    { label: translate("product"), path: "/products" },
     { label: translate("contact"), path: "/contact" },
   ];
 
@@ -110,9 +111,6 @@ export const Header = () => {
                 </MenuItem>
                 <MenuItem onClick={() => handleLanguageChange("en")}>
                   English
-                </MenuItem>
-                <MenuItem onClick={() => handleLanguageChange("ar")}>
-                  العربية
                 </MenuItem>
               </Menu>
 
@@ -190,16 +188,10 @@ export const Header = () => {
                 <ListItemText primary="English" />
               </ListItemButton>
             </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton onClick={() => handleLanguageChange("ar")}>
-                <ListItemText primary="العربية" />
-              </ListItemButton>
-            </ListItem>
           </List>
 
           <Divider sx={{ my: 2 }} />
 
-          {/* Mobile Theme Toggle */}
           <List>
             <ListItem disablePadding>
               <ListItemButton onClick={colorMode.toggleMode}>

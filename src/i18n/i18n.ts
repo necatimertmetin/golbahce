@@ -5,14 +5,16 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import HttpBackend from "i18next-http-backend";
 
 i18n
-  .use(HttpBackend) // <-- JSON dosyalarını public klasöründen yükler
+  .use(HttpBackend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     fallbackLng: "tr",
     debug: false,
+    ns: ["common"],
+    defaultNS: "common",
     backend: {
-      loadPath: "/locales/{{lng}}/common.json", // public klasör yolu
+      loadPath: "/locales/{{lng}}/{{ns}}.json",
     },
     interpolation: {
       escapeValue: false,

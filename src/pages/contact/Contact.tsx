@@ -13,33 +13,34 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { useTheme } from "@mui/material/styles";
+import { useTranslate } from "../../hooks/useTranslation";
 
 export const Contact = () => {
   const theme = useTheme();
-
+  const { translate } = useTranslate("pages.contact");
   const contactItems = [
     {
       icon: <LocationOnIcon />,
-      title: "Adres",
-      content: "1234 Golbahce Street, Istanbul, Turkey",
+      title: translate("address.title"), // "Adres"
+      content: translate("address.content"), // "1234 Golbahce Street, Istanbul, Turkey"
       color: "#FF6B6B",
     },
     {
       icon: <AccessTimeIcon />,
-      title: "Çalışma Saatleri",
-      content: "08:00 - 21:00",
+      title: translate("hours.title"), // "Çalışma Saatleri"
+      content: translate("hours.content"), // "08:00 - 21:00"
       color: "#4ECDC4",
     },
     {
       icon: <PhoneIcon />,
-      title: "Telefon",
-      content: "+90 123 456 7890",
+      title: translate("phone.title"), // "Telefon"
+      content: translate("phone.content"), // "+90 123 456 7890"
       color: "#45B7D1",
     },
     {
       icon: <EmailIcon />,
-      title: "E-posta",
-      content: "info@golbahce.com",
+      title: translate("email.title"), // "E-posta"
+      content: translate("email.content"), // "info@golbahce.com"
       color: "#96CEB4",
     },
   ];
@@ -62,7 +63,7 @@ export const Contact = () => {
             mb: 2,
           }}
         >
-          İletişim
+          {translate("title")}
         </Typography>
         <Typography
           variant="h6"
@@ -72,7 +73,7 @@ export const Contact = () => {
             mx: "auto",
           }}
         >
-          Bizimle iletişime geçin, sorularınızı yanıtlayalım
+          {translate("subtitle")}
         </Typography>
       </Box>
 
@@ -176,7 +177,7 @@ export const Contact = () => {
                     fontSize: { xs: "1.1rem", sm: "1.25rem" },
                   }}
                 >
-                  Rezervasyon İçin
+                  {translate("ctaTitle")}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -184,7 +185,7 @@ export const Contact = () => {
                     fontSize: { xs: "0.9rem", sm: "1rem" },
                   }}
                 >
-                  Bizi arayın veya doğrudan ziyaret edin
+                  {translate("ctaSubtitle")}
                 </Typography>
               </CardContent>
             </Card>

@@ -1,9 +1,48 @@
 {
+  "seo": {
+    "home": {
+      "title": "Home | Golbahçe",
+      "desc": "Welcome to Golbahçe restaurant. Delicious food and unique atmosphere await you.",
+      "ogTitle": "Golbahçe Restaurant - Home",
+      "ogDesc": "Discover our delicious dishes prepared with the freshest ingredients."
+    },
+    "about": {
+      "title": "About Us | Golbahçe",
+      "desc": "Learn about Golbahçe's story, mission and vision.",
+      "ogTitle": "About Us - Golbahçe",
+      "ogDesc": "The story of our flavors prepared with years of experience and passion."
+    },
+    "contact": {
+      "title": "Contact | Golbahçe",
+      "desc": "Contact Golbahçe. Address, phone and reservation information.",
+      "ogTitle": "Contact - Golbahçe",
+      "ogDesc": "Reach us, make reservations and ask your questions."
+    },
+    "products": {
+      "title": "Our Products | Golbahçe",
+      "desc": "Learn about Golbahçe's special products and flavors.",
+      "ogTitle": "Our Products - Golbahçe",
+      "ogDesc": "Our special products prepared with carefully selected ingredients."
+    },
+    "menu": {
+      "title": "Menu | Golbahçe",
+      "desc": "Golbahçe menu - Main courses, appetizers, desserts and beverages.",
+      "ogTitle": "Menu - Golbahçe",
+      "ogDesc": "Choose flavors that suit your taste from our rich menu."
+    },
+    "default": {
+      "title": "Golbahçe Restaurant",
+      "desc": "Golbahçe - Where taste and quality meet.",
+      "ogTitle": "Golbahçe Restaurant",
+      "ogDesc": "Visit Golbahçe for unique flavors and unforgettable experiences."
+    }
+  },
   "layout": {
     "header": {
       "homepage": "Home",
       "menu": "Menu",
       "about": "About Us",
+      "product": "Our Products",
       "contact": "Contact"
     }
   },
@@ -299,6 +338,148 @@
             "title": "Milk Coffee",
             "description": "Coffee prepared with milk."
           }
+        }
+      }
+    },
+    "products": {
+      "title": "Our Products",
+      "subtitle": "Discover our natural and quality products with traditional production methods",
+      "featuresLabel": "Features",
+      "items": {
+        "olives": {
+          "title": "Premium Olive Varieties",
+          "description": "Natural and delicious olives processed with traditional methods",
+          "features": [
+            "Natural Processing",
+            "Various Sizes",
+            "Fresh Harvest",
+            "Traditional Recipe"
+          ]
+        },
+        "oil": {
+          "title": "Cold Pressed Olive Oil",
+          "description": "First-class cold pressed olive oil with natural aroma",
+          "features": [
+            "Cold Pressed",
+            "0.5 Acid Ratio",
+            "Natural Aroma",
+            "Glass Bottle"
+          ]
+        },
+        "ceramics": {
+          "title": "Handmade Ceramic Products",
+          "description": "Unique patterned ceramic artworks from our craftsmen",
+          "features": [
+            "Handmade",
+            "Unique Design",
+            "Quality Material",
+            "Traditional Technique"
+          ]
+        }
+      }
+    },
+    "about": {
+      "title": "About Us",
+      "subtitle": "As Gölbahçe Facilities, we are here to create unforgettable moments in the heart of nature",
+      "story": {
+        "title": "Our Story",
+        "paragraph1": "Starting our journey in 2008, we set out with the goal of preserving natural beauty in the heart of Istanbul and creating a space where our guests can spend peaceful and enjoyable time.",
+        "paragraph2": "Today, with over 15 years of experience, we have become a place where families, couples, and friend groups create unforgettable memories. With our nature-respecting, sustainable tourism approach, we carry the responsibility of leaving a clean environment for future generations.",
+        "paragraph3": "Our mission is to offer a natural escape point for everyone who wants to get away from the stress of the city, creating unforgettable experiences by blending traditional Turkish hospitality with modern comfort.",
+        "imageAlt": "Gölbahçe Facilities General View"
+      },
+      "statsTitle": "Gölbahçe in Numbers",
+      "stats": {
+        "experience": {
+          "number": "15+",
+          "label": "Years Experience"
+        },
+        "guests": {
+          "number": "50K+",
+          "label": "Happy Guests"
+        },
+        "activities": {
+          "number": "25",
+          "label": "Different Activities"
+        },
+        "awards": {
+          "number": "12",
+          "label": "Awards & Certificates"
+        }
+      },
+      "featuresTitle": "Our Features",
+      "features": {
+        "nature": {
+          "title": "Natural Beauty",
+          "description": "A peaceful environment surrounded by greenery, in harmony with nature"
+        },
+        "family": {
+          "title": "Family Friendly",
+          "description": "Specially designed areas for guests of all ages"
+        },
+        "kitchen": {
+          "title": "Delicious Cuisine",
+          "description": "Our special menu where traditional and modern flavors meet"
+        },
+        "garden": {
+          "title": "Botanical Garden",
+          "description": "Our colorful garden full of rare plant species and flowers"
+        },
+        "pool": {
+          "title": "Water Sports",
+          "description": "Swimming pool and various water activities opportunities"
+        },
+        "spa": {
+          "title": "Relaxation Areas",
+          "description": "Special relaxation zones for stress relief and relaxation"
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Get in touch with us, we are ready to answer your questions.",
+      "address": {
+        "title": "Address",
+        "content": "1234 Golbahce Street, Istanbul, Turkey"
+      },
+      "hours": {
+        "title": "Working Hours",
+        "content": "08:00 - 21:00"
+      },
+      "phone": {
+        "title": "Phone",
+        "content": "+90 123 456 7890"
+      },
+      "email": {
+        "title": "Email",
+        "content": "info@golbahce.com"
+      },
+      "ctaTitle": "For Reservations",
+      "ctaSubtitle": "Call us or visit directly"
+    },
+    "home": {
+      "hero": {
+        "title": "Start your day with a fresh breakfast by the lake!",
+        "menu": "Menu"
+      },
+      "ourStory": {
+        "title": "Our Story",
+        "description": "At Gölbahçe, we believe that a great coffee experience is about more than just brewing. It’s the cozy atmosphere, warm hospitality, and delicious treats that accompany every sip. Our café is a sanctuary where you can escape the daily hustle, enjoy good company, aromatic coffee, and the simple pleasures of delightful pastries.",
+        "aboutUs": "About Us"
+      },
+      "whatWeHave": {
+        "title": "What We Offer",
+        "subtitle": "Our menu, prepared with the finest ingredients and a passion for flavor, offers enchanting coffee creations, freshly baked goods, and delicious snacks.",
+        "items": {
+          "gozleme": "Gözleme",
+          "kahvalti": "Breakfast",
+          "izgara": "Grill"
+        }
+      },
+      "social": {
+        "text": {
+          "prefix": "Share your experiences",
+          "suffix": "with us"
         }
       }
     }
