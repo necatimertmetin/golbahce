@@ -380,19 +380,20 @@
     },
     "about": {
       "title": "About Us",
-      "subtitle": "As Gölbahçe Facilities, we are here to create unforgettable moments in the heart of nature",
+      "subtitle": "Pleasure, Peace, Golbahçe",
       "story": {
-        "title": "Our Story",
-        "paragraph1": "Starting our journey in 2008, we set out with the goal of preserving natural beauty in the heart of Istanbul and creating a space where our guests can spend peaceful and enjoyable time.",
-        "paragraph2": "Today, with over 15 years of experience, we have become a place where families, couples, and friend groups create unforgettable memories. With our nature-respecting, sustainable tourism approach, we carry the responsibility of leaving a clean environment for future generations.",
-        "paragraph3": "Our mission is to offer a natural escape point for everyone who wants to get away from the stress of the city, creating unforgettable experiences by blending traditional Turkish hospitality with modern comfort.",
-        "imageAlt": "Gölbahçe Facilities General View"
+        "title": "Who We Are?",
+        "paragraph1": "At Golbahçe Facilities, our greatest goal is to offer our guests the comfort of their own home and the peace of their own garden. We exist to ensure that our guests enjoy pleasant and unforgettable moments with their loved ones, surrounded by nature and away from the city's hustle and bustle.",
+        "paragraph2": "Located in the beautiful corner of Orhangazi, by the clear shores of Lake İznik, under the cool shade of centuries-old olive trees, we provide a warm and safe environment where families can spend quality time together. Every detail in our facilities is carefully considered with an approach focused on taste, hygiene, and fruitful gain.",
+        "paragraph3": "With menus that appeal to our guests' tastes, a strong commitment to cleanliness, and sincere service, we aim to be the meeting point of peace and pleasure. While enjoying the soothing breeze of olive trees and the lake view, you will feel as if you are in your own garden at home.",
+        "paragraph4": "At Golbahçe Facilities, on the path we started with our slogan “Pleasure, Peace, Golbahçe,” we are delighted to host you, our valued guests. We invite you to experience joyful moments in a family atmosphere, immersed in nature.",
+        "imageAlt": "General View of Golbahçe Facilities"
       },
-      "statsTitle": "Gölbahçe in Numbers",
+      "statsTitle": "Golbahçe by the Numbers",
       "stats": {
         "experience": {
           "number": "15+",
-          "label": "Years Experience"
+          "label": "Years of Experience"
         },
         "guests": {
           "number": "50K+",
@@ -411,7 +412,7 @@
       "features": {
         "nature": {
           "title": "Natural Beauty",
-          "description": "A peaceful environment surrounded by greenery, in harmony with nature"
+          "description": "A peaceful environment surrounded by greenery and nature"
         },
         "family": {
           "title": "Family Friendly",
@@ -422,16 +423,16 @@
           "description": "Our special menu where traditional and modern flavors meet"
         },
         "garden": {
-          "title": "Botanical Garden",
-          "description": "Our colorful garden full of rare plant species and flowers"
+          "title": "Olive Garden",
+          "description": "Our natural garden where you can find peace among centuries-old olive trees."
         },
         "pool": {
-          "title": "Water Sports",
-          "description": "Swimming pool and various water activities opportunities"
+          "title": "Lake Swimming",
+          "description": "Our guests can enjoy swimming and cooling off in Lake İznik."
         },
         "spa": {
           "title": "Relaxation Areas",
-          "description": "Special relaxation zones for stress relief and relaxation"
+          "description": "Special relaxation zones to relieve stress and unwind"
         }
       }
     },

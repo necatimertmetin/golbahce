@@ -9,27 +9,35 @@ import {
 import { useTheme } from "@mui/material/styles";
 import { useTranslate } from "../../../hooks/useTranslation";
 import { useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const WhatWeHave = () => {
   const theme = useTheme();
   const { translate } = useTranslate("pages.home.whatWeHave");
+  const navigate = useNavigate();
 
   const menuItems = useMemo(
     () => [
       {
         title: translate("items.gozleme"),
-        image: "/images/penne.png",
+        image:
+          "https://delishglobe.com/wp-content/uploads/2024/11/Turkish-Gozleme-Stuffed-Flatbread.png",
         color: "#FF6B6B",
+        link: "/menu/gozleme",
       },
       {
         title: translate("items.kahvalti"),
-        image: "/images/penne.png",
+        image:
+          "https://i1.wp.com/artofwayfaring.com/app/uploads/2019/02/Serpme-Kahvalt%C4%B1-3.jpg?ssl=1",
         color: "#4ECDC4",
+        link: "/menu/breakfast",
       },
       {
         title: translate("items.izgara"),
-        image: "/images/penne.png",
+        image:
+          "https://miras-food-2019.imgix.net/media/Recepten/Miras-juni-klein-36.jpg?auto=format&crop=focalpoint&domain=miras-food-2019.imgix.net&fit=crop&fp-x=0.5&fp-y=0.5&ixlib=php-3.3.1&q=82&w=768",
         color: "#45B7D1",
+        link: "/menu/grill",
       },
     ],
     [translate]
@@ -153,6 +161,7 @@ export const WhatWeHave = () => {
                       background: `linear-gradient(135deg, ${item.color}, ${item.color}dd)`,
                     },
                   }}
+                  onClick={() => navigate(item.link)}
                 >
                   {item.title}
                 </Button>

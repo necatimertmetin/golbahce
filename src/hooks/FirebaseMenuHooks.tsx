@@ -19,6 +19,7 @@ export interface FirebaseMenuItem {
   allergens: AllergenKey[];
   hasExtras?: boolean;
   order: number;
+  image: string;
 }
 
 export interface FirebaseExtra {
@@ -60,6 +61,7 @@ export interface MenuItem {
   key: string;
   price: number;
   allergens: AllergenKey[];
+  image: string;
   extras?: MenuItem[];
 }
 
@@ -87,6 +89,7 @@ export function convertFirebaseDataToMenuData(
         .map((extra) => ({
           key: extra.key,
           price: extra.price,
+          image: item.image,
           allergens: extra.allergens,
         }));
 
@@ -94,6 +97,7 @@ export function convertFirebaseDataToMenuData(
         key: item.key,
         price: item.price,
         allergens: item.allergens,
+        image: item.image,
         extras: itemExtras.length > 0 ? itemExtras : undefined,
       };
     });

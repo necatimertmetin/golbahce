@@ -11,7 +11,7 @@ export const Home = () => {
     <Box>
       <Hero />
       <OurStory />
-      <Spacer imageUrl="https://picsum.photos/1920/540" />
+      <Spacer imageUrl="https://images.pexels.com/photos/32801270/pexels-photo-32801270.jpeg" />
       <WhatWeHave />
       <Social />
       <Contact />

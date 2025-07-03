@@ -7,7 +7,8 @@ export const Hero = () => {
       <Box
         sx={{
           height: "calc(100vh - 64px)",
-          backgroundImage: "url(https://picsum.photos/1920/1080)",
+          backgroundImage:
+            "url(https://idsb.tmgrup.com.tr/ly/uploads/images/2024/07/17/337261.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

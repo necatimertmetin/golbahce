@@ -174,10 +174,22 @@ export const About = () => {
                   sx={{
                     color: theme.palette.text.secondary,
                     lineHeight: 1.8,
+                    mb: 3,
                     fontSize: { xs: "0.95rem", sm: "1rem" },
                   }}
                 >
                   {translate("story.paragraph3")}
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    color: theme.palette.text.secondary,
+                    lineHeight: 1.8,
+
+                    fontSize: { xs: "0.95rem", sm: "1rem" },
+                  }}
+                >
+                  {translate("story.paragraph4")}
                 </Typography>
               </CardContent>
             </Card>
@@ -211,7 +223,7 @@ export const About = () => {
         </Grid>
 
         {/* Statistics Section */}
-        <Box sx={{ mb: { xs: 4, md: 6 } }}>
+        <Box sx={{ mb: { xs: 4, md: 6 }, display: "none" }}>
           <Typography
             variant="h4"
             textAlign="center"

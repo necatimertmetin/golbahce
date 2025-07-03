@@ -408,13 +408,14 @@
     },
     "about": {
       "title": "Hakkımızda",
-      "subtitle": "Gölbahçe Tesisleri olarak, doğanın kalbinde unutulmaz anlar yaşatmak için buradayız",
+      "subtitle": "Keyif, Huzur, Gölbahçe",
       "story": {
-        "title": "Hikayemiz",
-        "paragraph1": "2008 yılında başlayan yolculuğumuzda, İstanbul'un kalbinde doğal güzellikleri koruyarak, misafirlerimize huzurlu ve keyifli vakit geçirebilecekleri bir alan yaratma hedefiyle yola çıktık.",
-        "paragraph2": "Bugün, 15 yılı aşkın deneyimimizle, ailelerin, çiftlerin ve arkadaş gruplarının unutulmaz anılar biriktirdikleri bir mekan haline geldik. Doğaya saygılı, sürdürülebilir turizm anlayışımızla, gelecek nesillere temiz bir çevre bırakma sorumluluğunu taşıyoruz.",
-        "paragraph3": "Misyon olarak, şehrin stresinden uzaklaşmak isteyen herkese doğal bir kaçış noktası sunmak, geleneksel Türk misafirperverliğini modern konforla harmanlayarak unutulmaz deneyimler yaşatmaktır.",
-        "imageAlt": "Gölbahçe Tesisleri Genel Görünüm"
+        "title": "Biz Kimiz?",
+        "paragraph1": "Golbahçe Tesisleri olarak en büyük hedefimiz, misafirlerimize kendi evlerinin rahatlığını ve bahçelerinin huzurunu sunabilmektir. Doğanın içinde, şehrin kalabalığından uzakta, misafirlerimizin sevdikleriyle birlikte keyifli ve unutulmaz anlar yaşamalarını sağlamak için varız.",
+        "paragraph2": "Orhangazi’mizin güzide köşesinde, İznik Gölü’nün berrak kıyısında, asırlık zeytin ağaçlarının serin gölgesinde ailecek vakit geçirebileceğiniz samimi ve güvenli bir ortam sunuyoruz. Tesislerimizde her ayrıntı, hem lezzet hem hijyen hem de bereketli bir kazanç anlayışı üzerine titizlikle düşünülmüştür.",
+        "paragraph3": "Misafirlerimizin damak tadına hitap eden menülerimiz, temizliğe verdiğimiz önem ve içten hizmet anlayışımızla huzurun ve keyfin buluşma noktası olmayı amaçlıyoruz. Zeytin ağaçlarının huzur verici esintisi eşliğinde göl manzarasının tadını çıkarırken, kendinizi evinizin bahçesindeymiş gibi hissedeceksiniz.",
+        "paragraph4": "Golbahçe Tesisleri olarak, “Keyif, Huzur, Golbahçe” sloganımızla çıktığımız bu yolda siz değerli misafirlerimizi ağırlamaktan mutluluk duyuyoruz. Sizleri, aile sıcaklığında bir ortamda doğa ile iç içe, keyif dolu anlar yaşamaya davet ediyoruz.",
+        "imageAlt": "Golbahçe Tesisleri Genel Görünüm"
       },
       "statsTitle": "Rakamlarla Gölbahçe",
       "stats": {
@@ -450,12 +451,12 @@
           "description": "Geleneksel ve modern lezzetlerin buluştuğu özel menümüz"
         },
         "garden": {
-          "title": "Botanik Bahçe",
-          "description": "Nadir bitki türleri ve çiçeklerle dolu renkli bahçemiz"
+          "title": "Zeytin Bahçesi",
+          "description": "Asırlık zeytin ağaçları arasında huzur bulabileceğiniz doğal bahçemiz."
         },
         "pool": {
-          "title": "Su Sporları",
-          "description": "Yüzme havuzu ve çeşitli su aktiviteleri imkanı"
+          "title": "Göle Girilebilir",
+          "description": "Misafirlerimiz İznik Gölü'nde yüzme ve serinleme keyfi yaşayabilir."
         },
         "spa": {
           "title": "Dinlence Alanları",

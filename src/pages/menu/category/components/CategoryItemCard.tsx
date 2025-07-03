@@ -21,6 +21,7 @@ type Extra = {
 type Item = {
   key: string;
   extras?: Extra[];
+  image: string;
   allergens?: AllergenKey[];
 };
 
@@ -38,10 +39,8 @@ export const CategoryItemCard = ({ categoryKey, item }: Props) => {
 
   // İlk resim kaynağı
   const initialSrc = `/images/menu/${categoryKey}/${item.key}.webp`;
-
   // State ile src kontrolü (büyük resim için)
   const [mainSrc, setMainSrc] = useState(initialSrc);
-
   return (
     <Grid
       size={{
@@ -75,7 +74,7 @@ export const CategoryItemCard = ({ categoryKey, item }: Props) => {
                       objectFit: "cover",
                       flex: 1,
                     }}
-                    src={mainSrc}
+                    src={"burasi ileride kahvalti olacak"}
                     alt={translate(`${categoryKey}.items.${item.key}.title`)}
                     onError={() => {
                       if (mainSrc !== fallbackSrc) setMainSrc(fallbackSrc);
@@ -148,7 +147,7 @@ export const CategoryItemCard = ({ categoryKey, item }: Props) => {
                   borderRadius: 12,
                   objectFit: "cover",
                 }}
-                src={mainSrc}
+                src={item.image ?? mainSrc}
                 alt={translate(`${categoryKey}.items.${item.key}.title`)}
                 onError={() => {
                   if (mainSrc !== fallbackSrc) setMainSrc(fallbackSrc);
