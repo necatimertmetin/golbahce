@@ -25,9 +25,31 @@ export const ROUTES: AppRoute[] = [
     showInFooter: true,
   },
   {
+    path: "/menu",
+    element: <MenuPage />,
+    labelKey: "menu",
+    showInMenu: true,
+    showInFooter: true,
+  },
+  {
     path: "/about",
     element: <About />,
     labelKey: "about",
+    showInMenu: true,
+    showInFooter: true,
+  },
+
+  {
+    path: "/gallery",
+    element: <Gallery />,
+    labelKey: "gallery",
+    showInMenu: true,
+    showInFooter: true,
+  },
+  {
+    path: "/products",
+    element: <Products />,
+    labelKey: "product",
     showInMenu: true,
     showInFooter: true,
   },
@@ -38,27 +60,7 @@ export const ROUTES: AppRoute[] = [
     showInMenu: true,
     showInFooter: true,
   },
-  {
-    path: "/menu",
-    element: <MenuPage />,
-    labelKey: "menu",
-    showInMenu: true,
-    showInFooter: true,
-  },
-  { path: "/menu/:categoryKey", element: <CategoryPage /> }, // Alt sayfa, menüde listelenmez
-  {
-    path: "/products",
-    element: <Products />,
-    labelKey: "product",
-    showInMenu: true,
-    showInFooter: true,
-  },
-  { path: "/privacy", element: <PrivacyPolicy /> }, // Menüde gösterme
-  {
-    path: "/gallery",
-    element: <Gallery />,
-    labelKey: "gallery",
-    showInMenu: true,
-    showInFooter: true,
-  },
+  { path: "/menu/:categoryKey", element: <CategoryPage /> },
+
+  { path: "/privacy", element: <PrivacyPolicy /> },
 ];
