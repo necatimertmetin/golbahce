@@ -29,6 +29,7 @@ export interface FirebaseExtra {
   price: number;
   allergens: AllergenKey[];
   order: number;
+  image: string;
 }
 
 export interface FirebaseAllergen {
@@ -89,7 +90,7 @@ export function convertFirebaseDataToMenuData(
         .map((extra) => ({
           key: extra.key,
           price: extra.price,
-          image: item.image,
+          image: extra.image,
           allergens: extra.allergens,
         }));
 

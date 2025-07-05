@@ -15,6 +15,7 @@ import { useState } from "react";
 
 type Extra = {
   key: string;
+  image: string;
   allergens?: AllergenKey[];
 };
 
@@ -33,7 +34,7 @@ type Props = {
 export const CategoryItemCard = ({ categoryKey, item }: Props) => {
   const { translate } = useTranslate("pages.menu");
   const hasExtras = item.extras && item.extras.length > 0;
-
+  console.log(item);
   // Fallback resim yolu
   const fallbackSrc = "https://picsum.photos/500/300";
 
@@ -74,7 +75,7 @@ export const CategoryItemCard = ({ categoryKey, item }: Props) => {
                       objectFit: "cover",
                       flex: 1,
                     }}
-                    src={"burasi ileride kahvalti olacak"}
+                    src={item.image}
                     alt={translate(`${categoryKey}.items.${item.key}.title`)}
                     onError={() => {
                       if (mainSrc !== fallbackSrc) setMainSrc(fallbackSrc);

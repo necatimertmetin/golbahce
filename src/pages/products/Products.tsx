@@ -1,71 +1,86 @@
-import { Typography, Box, Container, Paper } from "@mui/material";
+import { Typography, Box, Container, Paper, Chip, Stack } from "@mui/material";
 import SpaIcon from "@mui/icons-material/Spa";
 import OpacityIcon from "@mui/icons-material/Opacity";
 import PaletteIcon from "@mui/icons-material/Palette";
 import { useTheme } from "@mui/material/styles";
 import { useTranslate } from "../../hooks/useTranslation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+// @ts-expect-error not found
+import "swiper/css";
+import { useMemo } from "react";
 
 export const Products = () => {
   const theme = useTheme();
   const { translate } = useTranslate("pages.products");
 
-  const products = [
-    {
-      id: 1,
-      title: translate("items.ceramics.title"),
-      description: translate("items.ceramics.description"),
-      icon: <PaletteIcon />,
-      color: "#1565C0",
-      images: [
-        "/images/products/cini/1.jpg",
-        "/images/products/cini/2.jpg",
-        "/images/products/cini/3.jpg",
-        "/images/products/cini/4.jpg",
-        "/images/products/cini/5.jpg",
-        "/images/products/cini/6.jpg",
-        "/images/products/cini/7.jpg",
-        "/images/products/cini/8.jpg",
-        "/images/products/cini/10.jpg",
-      ],
-      features: [
-        translate("items.ceramics.features.0"),
-        translate("items.ceramics.features.1"),
-        translate("items.ceramics.features.2"),
-      ],
-    },
-    {
-      id: 2,
-      title: translate("items.olives.title"),
-      description: translate("items.olives.description"),
-      icon: <SpaIcon />,
-      color: "#2E7D32",
-      images: [
-        "https://picsum.photos/600/400?random=10",
-        "https://picsum.photos/600/400?random=13",
-      ],
-      features: [
-        translate("items.olives.features.0"),
-        translate("items.olives.features.1"),
-        translate("items.olives.features.2"),
-      ],
-    },
-    {
-      id: 3,
-      title: translate("items.oil.title"),
-      description: translate("items.oil.description"),
-      icon: <OpacityIcon />,
-      color: "#F57F17",
-      images: [
-        "https://picsum.photos/600/400?random=11",
-        "https://picsum.photos/600/400?random=14",
-      ],
-      features: [
-        translate("items.oil.features.0"),
-        translate("items.oil.features.1"),
-        translate("items.oil.features.2"),
-      ],
-    },
-  ];
+  const products = useMemo(
+    () => [
+      {
+        id: 1,
+        title: translate("items.ceramics.title"),
+        description: translate("items.ceramics.description"),
+        icon: <PaletteIcon />,
+        color: "#1565C0",
+        images: [
+          "/images/products/cini/1.jpg",
+          "/images/products/cini/2.jpg",
+          "/images/products/cini/3.jpg",
+          "/images/products/cini/4.jpg",
+          "/images/products/cini/5.jpg",
+          "/images/products/cini/6.jpg",
+          "/images/products/cini/7.jpg",
+          "/images/products/cini/8.jpg",
+          "/images/products/cini/10.jpg",
+        ],
+        features: [
+          translate("items.ceramics.features.0"),
+          translate("items.ceramics.features.1"),
+          translate("items.ceramics.features.2"),
+        ],
+      },
+      {
+        id: 2,
+        title: translate("items.olives.title"),
+        description: translate("items.olives.description"),
+        icon: <SpaIcon />,
+        color: "#2E7D32",
+        images: [
+          "/images/products/olive/1.webp",
+          "/images/products/olive/2.jpg",
+          "/images/products/olive/3.webp",
+          "/images/products/olive/4.webp",
+          "/images/products/olive/5.webp",
+          "/images/products/olive/6.jpg",
+        ],
+        features: [
+          translate("items.olives.features.0"),
+          translate("items.olives.features.1"),
+          translate("items.olives.features.2"),
+        ],
+      },
+      {
+        id: 3,
+        title: translate("items.oil.title"),
+        description: translate("items.oil.description"),
+        icon: <OpacityIcon />,
+        color: "#F57F17",
+        images: [
+          "/images/products/oil/1.webp",
+          "/images/products/oil/2.jpg",
+          "/images/products/oil/3.jpg",
+          "/images/products/oil/4.webp",
+        ],
+        features: [
+          translate("items.oil.features.0"),
+          translate("items.oil.features.1"),
+          translate("items.oil.features.2"),
+        ],
+      },
+    ],
+    [translate]
+  );
 
   return (
     <Box
@@ -145,47 +160,69 @@ export const Products = () => {
             {/* Images */}
             <Box
               sx={{
+                justifyContent: "center",
                 display: "flex",
                 flexWrap: "wrap",
                 gap: 2,
                 mb: 3,
               }}
             >
-              {product.images?.map((img, idx) => (
-                <Box
-                  key={idx}
-                  component="img"
-                  src={img}
-                  alt={`${product.title} ${idx + 1}`}
-                  sx={{
-                    width: { xs: "100%", sm: "48%", md: "30%" },
-                    borderRadius: 2,
-                    objectFit: "cover",
-                    boxShadow: theme.shadows[2],
-                    transition: "transform 0.3s ease",
-                    "&:hover": {
-                      transform: "scale(1.03)",
-                    },
-                  }}
-                />
-              ))}
+              <Swiper
+                modules={[Autoplay]}
+                spaceBetween={16}
+                slidesPerView={3}
+                autoplay={{ delay: 2500, disableOnInteraction: false }}
+                breakpoints={{
+                  0: { slidesPerView: 1 },
+                  600: { slidesPerView: 2 },
+                  900: { slidesPerView: 3 },
+                }}
+              >
+                {product.images?.map((img, idx) => (
+                  <SwiperSlide key={idx}>
+                    <Paper
+                      component="img"
+                      src={img}
+                      alt={`${product.title} ${idx + 1}`}
+                      sx={{
+                        height: "300px",
+                        width: "100%",
+                        borderRadius: 2,
+                        objectFit: "contain",
+                        boxShadow: (theme) => theme.shadows[2],
+                        transition: "transform 0.3s ease",
+                        "&:hover": {
+                          transform: "scale(1.03)",
+                        },
+                      }}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </Box>
 
             {/* Features */}
-            <Box>
+            <Stack alignItems={"center"}>
               <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1 }}>
                 {translate("featuresLabel")}
               </Typography>
-              <ul style={{ margin: 0, paddingLeft: "1.2rem" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: 1,
+                }}
+              >
                 {product.features.map((feature, index) => (
-                  <li key={index} style={{ marginBottom: 4 }}>
-                    <Typography variant="body2" sx={{ lineHeight: 1.6 }}>
-                      {feature}
-                    </Typography>
-                  </li>
+                  <Chip
+                    key={index}
+                    label={feature}
+                    color="primary"
+                    sx={{ fontSize: "0.85rem" }}
+                  />
                 ))}
-              </ul>
-            </Box>
+              </Box>
+            </Stack>
           </Paper>
         ))}
       </Container>

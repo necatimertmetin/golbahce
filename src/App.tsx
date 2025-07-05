@@ -14,6 +14,7 @@ import { Contact } from "./pages/contact/Contact";
 import MenuPage from "./pages/menu/Menu";
 import { CategoryPage } from "./pages/menu/category/Category";
 import { Products } from "./pages/products/Products";
+import { PrivacyPolicy } from "./pages/privacy/PrivacyPolicy";
 
 const rtlLanguages = ["ar", "he", "fa", "ur"];
 
@@ -51,6 +52,7 @@ function AppContent() {
             <Route path="/products" element={<Products />} />
             <Route path="/menu" element={<MenuPage />} />
             <Route path="/menu/:categoryKey" element={<CategoryPage />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
           </Route>
         </Routes>
       </BrowserRouter>

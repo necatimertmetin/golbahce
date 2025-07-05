@@ -39,11 +39,36 @@
   },
   "layout": {
     "header": {
-      "homepage": "Anasayfa",
-      "menu": "Menü",
-      "about": "Hakkımızda",
+      "homepage": "ANASAYFA",
+      "menu": "MENÜ",
+      "about": "HAKKIMIZDA",
       "product": "ÜRÜNLERİMİZ",
-      "contact": "İletişim"
+      "contact": "İLETİŞİM"
+    },
+    "footer": {
+      "brand": "Gölbahçe Tesisleri",
+      "description": "Göl manzarasında unutulmaz anlar yaşayın. Kaliteli kahve, taze lezzetler ve sıcak atmosfer.",
+      "quickLinks": {
+        "title": "Hızlı Linkler",
+        "home": "Ana Sayfa",
+        "about": "Hakkımızda",
+        "menu": "Menü",
+        "contact": "İletişim"
+      },
+      "workingHours": {
+        "title": "Çalışma Saatleri",
+        "monday": "Pazartesi",
+        "closed": "Kapalı",
+        "tueSun": "Salı-Pazar",
+        "hours": "08:00 - 24:00"
+      },
+      "contact": {
+        "title": "İletişim",
+        "address": "Dutluca Yolu, Dutluca\nNo:253/1 Orhangazi̇/Bursa",
+        "phone": "+90 (532) 217 34 75"
+      },
+      "privacyPolicy": "Gizlilik Politikası",
+      "copyright": "Gölbahçe Tesisleri. Tüm hakları saklıdır."
     }
   },
   "pages": {
@@ -485,6 +510,35 @@
       },
       "ctaTitle": "Rezervasyon İçin",
       "ctaSubtitle": "Bizi arayın veya doğrudan ziyaret edin"
+    },
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "intro": "Bu Gizlilik Politikası, Gölbahçe Göl Kenarı Kafesi web sitesini ziyaret ettiğinizde kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar.",
+      "section1": {
+        "title": "1. Toplanan Bilgiler",
+        "content": "Web sitemizi ziyaret ettiğinizde ad, e-posta adresi, telefon numarası gibi kişisel bilgilerinizi yalnızca iletişim formları aracılığıyla siz sağladığınızda toplarız. Ayrıca çerezler ve benzeri teknolojilerle site kullanım bilgileri toplanabilir."
+      },
+      "section2": {
+        "title": "2. Bilgilerin Kullanımı",
+        "content": "Toplanan bilgiler yalnızca sizinle iletişime geçmek, hizmet kalitemizi artırmak ve site deneyiminizi geliştirmek amacıyla kullanılmaktadır."
+      },
+      "section3": {
+        "title": "3. Üçüncü Taraflarla Paylaşım",
+        "content": "Kişisel bilgileriniz yasal zorunluluklar dışında üçüncü şahıslarla paylaşılmaz. Hizmet sağlayıcılarımızla yalnızca gerekli durumlarda sınırlı erişim sağlanır."
+      },
+      "section4": {
+        "title": "4. Çerezler",
+        "content": "Sitemiz, kullanıcı deneyimini geliştirmek için çerezler kullanır. Tarayıcı ayarlarınızı değiştirerek çerezleri reddedebilir veya uyarı alabilirsiniz."
+      },
+      "section5": {
+        "title": "5. Güvenlik",
+        "content": "Kişisel bilgilerinizin güvenliği bizim için önemlidir. Bu bilgileri korumak için gerekli tüm teknik ve idari önlemleri alıyoruz."
+      },
+      "section6": {
+        "title": "6. İletişim",
+        "content": "Bu politika ile ilgili her türlü sorunuz için bizimle iletişime geçebilirsiniz: Dutluca Yolu, Orhangazi/Bursa | Telefon: +90 (532) 217 34 75"
+      },
+      "footer": "Gölbahçe Tesisleri. Tüm hakları saklıdır."
     }
   },
 

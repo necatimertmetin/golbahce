@@ -6,6 +6,7 @@ import { useState } from "react";
 
 type Extra = {
   key: string;
+  image: string;
   allergens?: AllergenKey[];
 };
 
@@ -26,7 +27,7 @@ export const ExtraItemCard = ({ categoryKey, itemKey, extra }: Props) => {
   // State ile src kontrolü (büyük resim için)
   const [mainSrc, setMainSrc] = useState(initialSrc);
   return (
-    <Grid>
+    <Grid size={{ xs: 12, sm: 6, md: 4 }}>
       <Card sx={{ p: 2, borderRadius: 5, minHeight: "400px" }}>
         <img
           style={{
@@ -35,7 +36,7 @@ export const ExtraItemCard = ({ categoryKey, itemKey, extra }: Props) => {
             objectFit: "cover",
             width: "100%",
           }}
-          src={mainSrc}
+          src={extra.image ?? mainSrc}
           alt={translate(
             `${categoryKey}.items.${itemKey}.extras.${extra.key}.title`
           )}
