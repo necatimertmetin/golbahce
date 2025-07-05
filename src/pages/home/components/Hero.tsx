@@ -1,78 +1,59 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import { useTranslate } from "../../../hooks/useTranslation";
+import heroImg from "/images/hero/kapak.webp";
 export const Hero = () => {
   const { translate } = useTranslate("pages.home.hero");
   return (
     <Box>
-      <Box
+      <Stack
+        direction={"row"}
+        justifyContent={"space-between"}
         sx={{
           height: "calc(100vh - 64px)",
-          backgroundImage:
-            "url(https://idsb.tmgrup.com.tr/ly/uploads/images/2024/07/17/337261.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          position: "relative",
-          "&::before": {
-            content: '""',
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            zIndex: 1,
-          },
+          background: (theme) => theme.palette.background.paper,
         }}
+        px={7}
+        pl={20}
       >
-        <Typography
-          variant="h1"
-          sx={{
-            position: "absolute",
-            bottom: 25,
-            left: 25,
-            fontWeight: 500,
-            width: { xs: "90vw", md: "60vw" },
-            fontSize: { xs: "2rem", sm: "3rem", md: "4rem" },
-            color: "white",
-            textShadow: "0 4px 20px rgba(0,0,0,0.5)",
-            zIndex: 2,
-            backdropFilter: "blur(5px)",
-            background: "rgba(255,255,255,0.1)",
-            borderRadius: 3,
-            p: { xs: 2, sm: 3 },
-            border: "1px solid rgba(255,255,255,0.2)",
-          }}
-        >
-          {translate("title")}
-        </Typography>
-
-        <Button
-          variant="contained"
-          sx={{
-            position: "absolute",
-            right: { xs: "5vw", md: "10vw" },
-            top: "50%",
-            transform: "translateY(-50%)",
-            width: { xs: "20vw", md: "10vw" },
-            height: { xs: "8vw", md: "3vw" },
-            minWidth: 120,
-            minHeight: 60,
-            fontSize: { xs: "1.2rem", md: "2rem" },
-            borderRadius: 3,
-            backdropFilter: "blur(10px)",
-            border: "1px solid rgba(255,255,255,0.3)",
-            boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
-            zIndex: 2,
-          }}
-        >
+        <Stack height={"100%"} justifyContent={"center"} spacing={5}>
           <Typography
-            variant="h4"
-            sx={{ fontSize: { xs: "1rem", md: "1.5rem" } }}
+            variant="h1"
+            sx={{
+              fontWeight: 500,
+              width: { xs: "90vw", md: "60vw" },
+              fontSize: { xs: "2rem", sm: "3rem", md: "4rem" },
+              zIndex: 2,
+              color: (theme) => theme.palette.primary.main,
+            }}
           >
-            {translate("menu")}
+            {translate("title")}
           </Typography>
-        </Button>
-      </Box>
+          <Button
+            variant="contained"
+            sx={{
+              width: { xs: "20vw", md: "10vw" },
+              height: { xs: "8vw", md: "3vw" },
+              minWidth: 120,
+              minHeight: 60,
+              fontSize: { xs: "1.2rem", md: "2rem" },
+              borderRadius: 3,
+              backdropFilter: "blur(10px)",
+
+              border: "1px solid rgba(255,255,255,0.3)",
+              boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
+              zIndex: 2,
+            }}
+          >
+            <Typography
+              variant="h4"
+              sx={{ color: "#fff", fontSize: { xs: "1rem", md: "1.5rem" } }}
+            >
+              {translate("menu")}
+            </Typography>
+          </Button>
+        </Stack>
+        <img style={{ position: "relative" }} height="100%" src={heroImg} />
+      </Stack>
     </Box>
   );
 };
