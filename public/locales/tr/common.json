@@ -43,7 +43,8 @@
       "menu": "MENÜ",
       "about": "HAKKIMIZDA",
       "product": "ÜRÜNLERİMİZ",
-      "contact": "İLETİŞİM"
+      "contact": "İLETİŞİM",
+      "gallery": "GALERİ"
     },
     "footer": {
       "brand": "Gölbahçe Tesisleri",
@@ -489,6 +490,9 @@
           "description": "Stres atmak ve rahatlamak için özel dinlence bölgeleri"
         }
       }
+    },
+    "gallery": {
+      "title": "Galeri"
     },
     "contact": {
       "title": "İletişim",

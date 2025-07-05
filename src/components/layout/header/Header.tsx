@@ -54,6 +54,7 @@ export const Header = () => {
     { label: translate("homepage"), path: "/" },
     { label: translate("menu"), path: "/menu" },
     { label: translate("about"), path: "/about" },
+    { label: translate("gallery"), path: "/gallery" },
     { label: translate("product"), path: "/products" },
     { label: translate("contact"), path: "/contact" },
   ];

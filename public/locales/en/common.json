@@ -44,7 +44,8 @@
       "menu": "Menu",
       "about": "About Us",
       "product": "Our Products",
-      "contact": "Contact"
+      "contact": "Contact",
+      "gallery": "GALLERY"
     },
     "footer": {
       "brand": "Gölbahçe Facilities",
@@ -488,6 +489,9 @@
           "description": "Special relaxation zones to relieve stress and unwind"
         }
       }
+    },
+    "gallery": {
+      "title": "Gallery"
     },
     "contact": {
       "title": "Contact",
