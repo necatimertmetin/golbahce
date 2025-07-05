@@ -26,6 +26,7 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import TranslateIcon from "@mui/icons-material/Translate";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTranslate } from "../../../hooks/useTranslation";
+import { ROUTES } from "../../../routes/Routes";
 
 export const Header = () => {
   const colorMode = useContext(ColorModeContext);
@@ -50,14 +51,10 @@ export const Header = () => {
     setMobileMenuOpen(false);
   };
 
-  const menuItems = [
-    { label: translate("homepage"), path: "/" },
-    { label: translate("menu"), path: "/menu" },
-    { label: translate("about"), path: "/about" },
-    { label: translate("gallery"), path: "/gallery" },
-    { label: translate("product"), path: "/products" },
-    { label: translate("contact"), path: "/contact" },
-  ];
+  const menuItems = ROUTES.filter((r) => r.showInMenu).map((r) => ({
+    label: translate(r.labelKey || ""),
+    path: r.path,
+  }));
 
   return (
     <AppBar position="static" color="transparent" elevation={0}>

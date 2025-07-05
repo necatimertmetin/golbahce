@@ -40,7 +40,7 @@
   },
   "layout": {
     "header": {
-      "homepage": "Home",
+      "home": "Home",
       "menu": "Menu",
       "about": "About Us",
       "product": "Our Products",

@@ -14,17 +14,16 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { useTranslate } from "../../../hooks/useTranslation";
+import { ROUTES } from "../../../routes/Routes";
 
 export const Footer = () => {
   const theme = useTheme();
   const { translate } = useTranslate("layout.footer");
 
-  const quickLinks = [
-    { name: translate("quickLinks.home"), href: "/" },
-    { name: translate("quickLinks.about"), href: "/about" },
-    { name: translate("quickLinks.menu"), href: "/menu" },
-    { name: translate("quickLinks.contact"), href: "/contact" },
-  ];
+  const quickLinks = ROUTES.filter((r) => r.showInFooter).map((r) => ({
+    name: translate(`quickLinks.${r.labelKey}`),
+    href: r.path,
+  }));
 
   const workingHours = [
     {

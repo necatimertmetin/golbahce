@@ -8,14 +8,7 @@ import { I18nextProvider, useTranslation } from "react-i18next";
 import i18n from "./i18n/i18n";
 import { PageLayout } from "./components/layout/PageLayout";
 import { ColorModeContextProvider } from "./provider/ColorModeProvider";
-import { Home } from "./pages/home/Home";
-import { About } from "./pages/about/About";
-import { Contact } from "./pages/contact/Contact";
-import MenuPage from "./pages/menu/Menu";
-import { CategoryPage } from "./pages/menu/category/Category";
-import { Products } from "./pages/products/Products";
-import { PrivacyPolicy } from "./pages/privacy/PrivacyPolicy";
-import { Gallery } from "./pages/gallery/Gallery";
+import { ROUTES } from "./routes/Routes";
 
 const rtlLanguages = ["ar", "he", "fa", "ur"];
 
@@ -47,14 +40,13 @@ function AppContent() {
       <BrowserRouter>
         <Routes>
           <Route element={<PageLayout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/menu" element={<MenuPage />} />
-            <Route path="/menu/:categoryKey" element={<CategoryPage />} />
-            <Route path="/privacy" element={<PrivacyPolicy />} />
-            <Route path="/gallery" element={<Gallery />} />
+            {ROUTES.map((route) => (
+              <Route
+                key={route.path}
+                path={route.path}
+                element={route.element}
+              />
+            ))}
           </Route>
         </Routes>
       </BrowserRouter>
