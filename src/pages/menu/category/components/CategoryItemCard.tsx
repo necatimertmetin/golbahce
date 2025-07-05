@@ -118,7 +118,7 @@ export const CategoryItemCard = ({ categoryKey, item }: Props) => {
                   fontSize: { xs: "1.5rem", sm: "1.75rem", md: "2rem" },
                 }}
               >
-                Ekstralar
+                {translate("extras")}
               </Typography>
 
               <Grid container spacing={{ xs: 2, sm: 3, md: 5 }}>

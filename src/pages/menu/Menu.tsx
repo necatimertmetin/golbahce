@@ -118,7 +118,7 @@ export const MenuPage = () => {
                 py: { xs: 1, sm: 1.5 },
               }}
             >
-              İçerikler
+              {translate("contents")}
             </Button>
           </Grid>
         ))}

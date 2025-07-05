@@ -81,9 +81,7 @@ export const WhatWeHave = () => {
             maxWidth: 800,
           }}
         >
-          En kaliteli malzemeler ve lezzet tutkusu ile hazırlanan menümüz,
-          büyüleyici kahve kreasyonları, taze pişmiş ürünler ve lezzetli
-          atıştırmalıklar sunuyor.
+          {translate("subtitle")}
         </Typography>
       </Grid>
 

@@ -101,7 +101,8 @@
     "menu": {
       "title": "Menü",
       "price": "Fiyat",
-      "extras": "extralar",
+      "extras": "Extralar",
+      "contents": "İÇERİKLER",
       "breakfast": {
         "title": "Kahvaltılıklar",
         "description": "Günün en önemli öğününde bitirilemeyen tabaklar!! Koccaman Lezzetler…",

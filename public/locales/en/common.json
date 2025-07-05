@@ -26,6 +26,7 @@
     },
     "menu": {
       "title": "Menu | Gölbahçe",
+
       "desc": "Gölbahçe menu - Main courses, appetizers, desserts and beverages.",
       "ogTitle": "Menu - Gölbahçe",
       "ogDesc": "Choose flavors that suit your taste from our rich menu."
@@ -101,7 +102,8 @@
     "menu": {
       "title": "Menu",
       "price": "Price",
-      "extras": "extras",
+      "extras": "Extras",
+      "contents": "Contents",
       "breakfast": {
         "title": "Breakfasts",
         "description": "Plates that can't be finished for the most important meal of the day!! Big flavors…",
