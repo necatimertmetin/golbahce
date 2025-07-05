@@ -15,7 +15,7 @@ import PoolIcon from "@mui/icons-material/Pool";
 import SpaIcon from "@mui/icons-material/Spa";
 import { useTheme } from "@mui/material/styles";
 import { useTranslate } from "../../hooks/useTranslation";
-
+import aboutImg from "/images/about/1.jpg";
 export const About = () => {
   const theme = useTheme();
   const { translate } = useTranslate("pages.about");
@@ -206,7 +206,7 @@ export const About = () => {
             >
               <Box
                 component="img"
-                src="https://picsum.photos/800/600?random=1"
+                src={aboutImg}
                 alt={translate("story.imageAlt")}
                 sx={{
                   width: "100%",

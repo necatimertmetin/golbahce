@@ -1,40 +1,40 @@
 {
   "seo": {
     "home": {
-      "title": "Home | Golbahçe",
-      "desc": "Welcome to Golbahçe restaurant. Delicious food and unique atmosphere await you.",
-      "ogTitle": "Golbahçe Restaurant - Home",
+      "title": "Home | Gölbahçe",
+      "desc": "Welcome to Gölbahçe restaurant. Delicious food and unique atmosphere await you.",
+      "ogTitle": "Gölbahçe Restaurant - Home",
       "ogDesc": "Discover our delicious dishes prepared with the freshest ingredients."
     },
     "about": {
-      "title": "About Us | Golbahçe",
-      "desc": "Learn about Golbahçe's story, mission and vision.",
-      "ogTitle": "About Us - Golbahçe",
+      "title": "About Us | Gölbahçe",
+      "desc": "Learn about Gölbahçe's story, mission and vision.",
+      "ogTitle": "About Us - Gölbahçe",
       "ogDesc": "The story of our flavors prepared with years of experience and passion."
     },
     "contact": {
-      "title": "Contact | Golbahçe",
-      "desc": "Contact Golbahçe. Address, phone and reservation information.",
-      "ogTitle": "Contact - Golbahçe",
+      "title": "Contact | Gölbahçe",
+      "desc": "Contact Gölbahçe. Address, phone and reservation information.",
+      "ogTitle": "Contact - Gölbahçe",
       "ogDesc": "Reach us, make reservations and ask your questions."
     },
     "products": {
-      "title": "Our Products | Golbahçe",
-      "desc": "Learn about Golbahçe's special products and flavors.",
-      "ogTitle": "Our Products - Golbahçe",
+      "title": "Our Products | Gölbahçe",
+      "desc": "Learn about Gölbahçe's special products and flavors.",
+      "ogTitle": "Our Products - Gölbahçe",
       "ogDesc": "Our special products prepared with carefully selected ingredients."
     },
     "menu": {
-      "title": "Menu | Golbahçe",
-      "desc": "Golbahçe menu - Main courses, appetizers, desserts and beverages.",
-      "ogTitle": "Menu - Golbahçe",
+      "title": "Menu | Gölbahçe",
+      "desc": "Gölbahçe menu - Main courses, appetizers, desserts and beverages.",
+      "ogTitle": "Menu - Gölbahçe",
       "ogDesc": "Choose flavors that suit your taste from our rich menu."
     },
     "default": {
-      "title": "Golbahçe Restaurant",
-      "desc": "Golbahçe - Where taste and quality meet.",
-      "ogTitle": "Golbahçe Restaurant",
-      "ogDesc": "Visit Golbahçe for unique flavors and unforgettable experiences."
+      "title": "Gölbahçe Restaurant",
+      "desc": "Gölbahçe - Where taste and quality meet.",
+      "ogTitle": "Gölbahçe Restaurant",
+      "ogDesc": "Visit Gölbahçe for unique flavors and unforgettable experiences."
     }
   },
   "layout": {
@@ -431,16 +431,16 @@
     },
     "about": {
       "title": "About Us",
-      "subtitle": "Pleasure, Peace, Golbahçe",
+      "subtitle": "Pleasure, Peace, Gölbahçe",
       "story": {
         "title": "Who We Are?",
-        "paragraph1": "At Golbahçe Facilities, our greatest goal is to offer our guests the comfort of their own home and the peace of their own garden. We exist to ensure that our guests enjoy pleasant and unforgettable moments with their loved ones, surrounded by nature and away from the city's hustle and bustle.",
+        "paragraph1": "At Gölbahçe Facilities, our greatest goal is to offer our guests the comfort of their own home and the peace of their own garden. We exist to ensure that our guests enjoy pleasant and unforgettable moments with their loved ones, surrounded by nature and away from the city's hustle and bustle.",
         "paragraph2": "Located in the beautiful corner of Orhangazi, by the clear shores of Lake İznik, under the cool shade of centuries-old olive trees, we provide a warm and safe environment where families can spend quality time together. Every detail in our facilities is carefully considered with an approach focused on taste, hygiene, and fruitful gain.",
         "paragraph3": "With menus that appeal to our guests' tastes, a strong commitment to cleanliness, and sincere service, we aim to be the meeting point of peace and pleasure. While enjoying the soothing breeze of olive trees and the lake view, you will feel as if you are in your own garden at home.",
-        "paragraph4": "At Golbahçe Facilities, on the path we started with our slogan 'Pleasure, Peace, Golbahçe,' we are delighted to host you, our valued guests. We invite you to experience joyful moments in a family atmosphere, immersed in nature.",
-        "imageAlt": "General View of Golbahçe Facilities"
+        "paragraph4": "At Gölbahçe Facilities, on the path we started with our slogan 'Pleasure, Peace, Gölbahçe,' we are delighted to host you, our valued guests. We invite you to experience joyful moments in a family atmosphere, immersed in nature.",
+        "imageAlt": "General View of Gölbahçe Facilities"
       },
-      "statsTitle": "Golbahçe by the Numbers",
+      "statsTitle": "Gölbahçe by the Numbers",
       "stats": {
         "experience": {
           "number": "15+",
