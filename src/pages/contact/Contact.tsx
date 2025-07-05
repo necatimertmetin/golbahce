@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import PhoneIcon from "@mui/icons-material/Phone";
-import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { useTheme } from "@mui/material/styles";
 import { useTranslate } from "../../hooks/useTranslation";
@@ -36,12 +35,6 @@ export const Contact = () => {
       title: translate("phone.title"), // "Telefon"
       content: translate("phone.content"), // "+90 123 456 7890"
       color: "#45B7D1",
-    },
-    {
-      icon: <EmailIcon />,
-      title: translate("email.title"), // "E-posta"
-      content: translate("email.content"), // "info@golbahce.com"
-      color: "#96CEB4",
     },
   ];
 
@@ -148,6 +141,7 @@ export const Contact = () => {
                           color: theme.palette.text.secondary,
                           lineHeight: 1.6,
                           fontSize: { xs: "0.9rem", sm: "1rem" },
+                          whiteSpace: "pre-line", // 👈 Satır sonlarını uygular
                           wordBreak:
                             item.title === "E-posta"
                               ? "break-all"

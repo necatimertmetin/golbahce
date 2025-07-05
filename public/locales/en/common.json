@@ -44,16 +44,67 @@
       "about": "About Us",
       "product": "Our Products",
       "contact": "Contact"
+    },
+    "footer": {
+      "brand": "Gölbahçe Facilities",
+      "description": "Experience unforgettable moments with a lake view. Quality coffee, fresh flavors and warm atmosphere.",
+      "quickLinks": {
+        "title": "Quick Links",
+        "home": "Home",
+        "about": "About Us",
+        "menu": "Menu",
+        "contact": "Contact"
+      },
+      "workingHours": {
+        "title": "Working Hours",
+        "monday": "Monday",
+        "closed": "Closed",
+        "tueSun": "Tuesday-Sunday",
+        "hours": "08:00 - 24:00"
+      },
+      "contact": {
+        "title": "Contact",
+        "address": "Dutluca Road, Dutluca\nNo:253/1 Orhangazi/Bursa",
+        "phone": "+90 (532) 217 34 75"
+      },
+      "privacyPolicy": "Privacy Policy",
+      "copyright": "Gölbahçe Facilities. All rights reserved."
     }
   },
   "pages": {
+    "home": {
+      "hero": {
+        "title": "Start your day with a fresh breakfast by the lake!",
+        "menu": "Menu"
+      },
+      "ourStory": {
+        "title": "Our Story",
+        "description": "At Gölbahçe, we believe that a great coffee experience is about more than just brewing. It's the cozy atmosphere, warm hospitality, and delicious treats that accompany every sip. Our café is a sanctuary where you can escape the daily hustle, enjoy good company, aromatic coffee, and the simple pleasures of delightful pastries.",
+        "aboutUs": "About Us"
+      },
+      "whatWeHave": {
+        "title": "What We Offer",
+        "subtitle": "Our menu, prepared with the finest ingredients and a passion for flavor, offers enchanting coffee creations, freshly baked goods, and delicious snacks.",
+        "items": {
+          "gozleme": "Gözleme",
+          "kahvalti": "Breakfast",
+          "izgara": "Grill"
+        }
+      },
+      "social": {
+        "text": {
+          "prefix": "Share your experiences",
+          "suffix": "with us"
+        }
+      }
+    },
     "menu": {
       "title": "Menu",
       "price": "Price",
       "extras": "extras",
       "breakfast": {
         "title": "Breakfasts",
-        "description": "Plates that can’t be finished for the most important meal of the day!! Big flavors…",
+        "description": "Plates that can't be finished for the most important meal of the day!! Big flavors…",
         "items": {
           "serpme_single": {
             "title": "Turkish Breakfast (For One)",
@@ -130,7 +181,7 @@
       },
       "gozleme": {
         "title": "Gözlemes",
-        "description": "There’s Love on the Griddle!",
+        "description": "There's Love on the Griddle!",
         "items": {
           "peynirli": {
             "title": "Cheese",
@@ -386,7 +437,7 @@
         "paragraph1": "At Golbahçe Facilities, our greatest goal is to offer our guests the comfort of their own home and the peace of their own garden. We exist to ensure that our guests enjoy pleasant and unforgettable moments with their loved ones, surrounded by nature and away from the city's hustle and bustle.",
         "paragraph2": "Located in the beautiful corner of Orhangazi, by the clear shores of Lake İznik, under the cool shade of centuries-old olive trees, we provide a warm and safe environment where families can spend quality time together. Every detail in our facilities is carefully considered with an approach focused on taste, hygiene, and fruitful gain.",
         "paragraph3": "With menus that appeal to our guests' tastes, a strong commitment to cleanliness, and sincere service, we aim to be the meeting point of peace and pleasure. While enjoying the soothing breeze of olive trees and the lake view, you will feel as if you are in your own garden at home.",
-        "paragraph4": "At Golbahçe Facilities, on the path we started with our slogan “Pleasure, Peace, Golbahçe,” we are delighted to host you, our valued guests. We invite you to experience joyful moments in a family atmosphere, immersed in nature.",
+        "paragraph4": "At Golbahçe Facilities, on the path we started with our slogan 'Pleasure, Peace, Golbahçe,' we are delighted to host you, our valued guests. We invite you to experience joyful moments in a family atmosphere, immersed in nature.",
         "imageAlt": "General View of Golbahçe Facilities"
       },
       "statsTitle": "Golbahçe by the Numbers",
@@ -441,15 +492,15 @@
       "subtitle": "Get in touch with us, we are ready to answer your questions.",
       "address": {
         "title": "Address",
-        "content": "1234 Golbahce Street, Istanbul, Turkey"
+        "content": "Dutluca Road, Dutluca\nNo:253/1 Orhangazi/Bursa"
       },
       "hours": {
         "title": "Working Hours",
-        "content": "08:00 - 21:00"
+        "content": "Monday: Closed\nTuesday - Sunday: 08:00 - 24:00"
       },
       "phone": {
         "title": "Phone",
-        "content": "+90 123 456 7890"
+        "content": "+90 (532) 217 34 75"
       },
       "email": {
         "title": "Email",
@@ -458,31 +509,34 @@
       "ctaTitle": "For Reservations",
       "ctaSubtitle": "Call us or visit directly"
     },
-    "home": {
-      "hero": {
-        "title": "Start your day with a fresh breakfast by the lake!",
-        "menu": "Menu"
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "This Privacy Policy explains how personal data is collected, used, and protected when you visit the Gölbahçe Lakeside Cafe website.",
+      "section1": {
+        "title": "1. Information Collected",
+        "content": "When you visit our website, we collect personal information such as name, email address, and phone number only when you provide it through contact forms. Additionally, site usage information may be collected through cookies and similar technologies."
       },
-      "ourStory": {
-        "title": "Our Story",
-        "description": "At Gölbahçe, we believe that a great coffee experience is about more than just brewing. It’s the cozy atmosphere, warm hospitality, and delicious treats that accompany every sip. Our café is a sanctuary where you can escape the daily hustle, enjoy good company, aromatic coffee, and the simple pleasures of delightful pastries.",
-        "aboutUs": "About Us"
+      "section2": {
+        "title": "2. Use of Information",
+        "content": "The collected information is used solely for contacting you, improving our service quality, and enhancing your site experience."
       },
-      "whatWeHave": {
-        "title": "What We Offer",
-        "subtitle": "Our menu, prepared with the finest ingredients and a passion for flavor, offers enchanting coffee creations, freshly baked goods, and delicious snacks.",
-        "items": {
-          "gozleme": "Gözleme",
-          "kahvalti": "Breakfast",
-          "izgara": "Grill"
-        }
+      "section3": {
+        "title": "3. Sharing with Third Parties",
+        "content": "Your personal information is not shared with third parties except for legal obligations. Limited access is provided to our service providers only when necessary."
       },
-      "social": {
-        "text": {
-          "prefix": "Share your experiences",
-          "suffix": "with us"
-        }
-      }
+      "section4": {
+        "title": "4. Cookies",
+        "content": "Our site uses cookies to improve user experience. You can reject cookies or receive warnings by changing your browser settings."
+      },
+      "section5": {
+        "title": "5. Security",
+        "content": "The security of your personal information is important to us. We take all necessary technical and administrative measures to protect this information."
+      },
+      "section6": {
+        "title": "6. Contact",
+        "content": "For any questions regarding this policy, you can contact us: Dutluca Road, Orhangazi/Bursa | Phone: +90 (532) 217 34 75"
+      },
+      "footer": "Gölbahçe Facilities. All rights reserved."
     }
   },
   "allergens": {

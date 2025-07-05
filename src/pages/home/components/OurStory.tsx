@@ -50,6 +50,9 @@ export const OurStory = () => {
         <Button
           variant="outlined"
           size="large"
+          onClick={() => {
+            window.location.href = "/about";
+          }}
           sx={{
             fontSize: { xs: "1.2rem", md: "1.5rem" },
             px: { xs: 4, md: 6 },
