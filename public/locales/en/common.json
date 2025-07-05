@@ -55,7 +55,9 @@
         "home": "Home",
         "about": "About Us",
         "menu": "Menu",
-        "contact": "Contact"
+        "contact": "Contact",
+        "product": "Our Products",
+        "gallery": "Gallery"
       },
       "workingHours": {
         "title": "Working Hours",

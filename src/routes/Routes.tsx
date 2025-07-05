@@ -51,6 +51,7 @@ export const ROUTES: AppRoute[] = [
     element: <Products />,
     labelKey: "product",
     showInMenu: true,
+    showInFooter: true,
   },
   { path: "/privacy", element: <PrivacyPolicy /> }, // Menüde gösterme
   {
@@ -58,5 +59,6 @@ export const ROUTES: AppRoute[] = [
     element: <Gallery />,
     labelKey: "gallery",
     showInMenu: true,
+    showInFooter: true,
   },
 ];

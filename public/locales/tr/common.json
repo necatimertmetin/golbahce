@@ -54,7 +54,9 @@
         "home": "Ana Sayfa",
         "about": "Hakkımızda",
         "menu": "Menü",
-        "contact": "İletişim"
+        "contact": "İletişim",
+        "product": "Ürünlerimiz",
+        "gallery": "Galeri"
       },
       "workingHours": {
         "title": "Çalışma Saatleri",
