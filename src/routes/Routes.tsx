@@ -1,4 +1,3 @@
-import { Home } from "@mui/icons-material";
 import type { JSX } from "react";
 import { About } from "../pages/about/About";
 import { Contact } from "../pages/contact/Contact";
@@ -7,6 +6,7 @@ import { CategoryPage } from "../pages/menu/category/Category";
 import MenuPage from "../pages/menu/Menu";
 import { PrivacyPolicy } from "../pages/privacy/PrivacyPolicy";
 import { Products } from "../pages/products/Products";
+import { Home } from "../pages/home/Home";
 
 export type AppRoute = {
   path: string;
