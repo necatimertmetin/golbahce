@@ -13,21 +13,47 @@ import { useTranslate } from "../../hooks/useTranslation";
 
 type GalleryItem = {
   type: "image" | "video";
-  id?: number; // picsum için
+  id?: number;
   width?: number;
   height?: number;
-  src?: string; // video linki için
+  src?: string;
 };
 
 const itemData: GalleryItem[] = [
-  { type: "image", id: 1015, width: 600, height: 800 },
-  { type: "video", src: "https://www.w3schools.com/html/mov_bbb.mp4" },
-  { type: "image", id: 1025, width: 800, height: 600 },
-  { type: "video", src: "https://www.w3schools.com/html/movie.mp4" },
-  { type: "image", id: 1035, width: 400, height: 600 },
-  { type: "image", id: 1045, width: 500, height: 700 },
-  { type: "video", src: "https://www.w3schools.com/html/mov_bbb.mp4" },
-  { type: "image", id: 1055, width: 700, height: 500 },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0035.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0038.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0039.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0041.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0043.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0044.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0045.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0046.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0047.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0048.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0049.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0050.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0051.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0052.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0078.jpg" },
+  { type: "image", src: "/images/gallery/IMG-20250705-WA0079.jpg" },
+  { type: "video", src: "/images/gallery/VID-20250705-WA0001.mp4" },
+  { type: "video", src: "/images/gallery/VID-20250705-WA0002.mp4" },
+  { type: "video", src: "/images/gallery/VID-20250705-WA0003.mp4" },
+  { type: "video", src: "/images/gallery/VID-20250705-WA0004.mp4" },
+  { type: "video", src: "/images/gallery/VID-20250705-WA0005.mp4" },
+  { type: "video", src: "/images/gallery/VID-20250705-WA0006.mp4" },
+  { type: "video", src: "/images/gallery/VID-20250705-WA0010.mp4" },
+  { type: "video", src: "/images/gallery/VID-20250705-WA0011.mp4" },
+  { type: "video", src: "/images/gallery/VID-20250705-WA0012.mp4" },
+  { type: "video", src: "/images/gallery/VID-20250705-WA0013.mp4" },
+  { type: "video", src: "/images/gallery/VID-20250705-WA0014.mp4" },
+  { type: "video", src: "/images/gallery/VID-20250705-WA0015.mp4" },
+  { type: "video", src: "/images/gallery/VID-20250705-WA0016.mp4" },
+  { type: "video", src: "/images/gallery/VID-20250706-WA0004.mp4" },
+  {
+    type: "video",
+    src: "/images/gallery/WhatsApp Video 2025-07-05 at 21.41.12_85174b81.mp4",
+  },
 ];
 
 export const Gallery: React.FC = () => {
@@ -83,18 +109,14 @@ export const Gallery: React.FC = () => {
                 borderRadius: 2,
                 display: "block",
               },
-              "&:hover img, &:hover video": {
+              "&:hover img": {
                 transform: "scale(1.05)",
               },
             }}
             onClick={() => handleOpen(item)}
           >
-            {item.type === "image" && item.id ? (
-              <img
-                src={`https://picsum.photos/id/${item.id}/${item.width}/${item.height}`}
-                alt={`Picsum ${item.id}`}
-                loading="lazy"
-              />
+            {item.type === "image" && item.src ? (
+              <img src={item.src} alt="" loading="lazy" />
             ) : item.type === "video" && item.src ? (
               <video
                 src={item.src}
@@ -132,10 +154,10 @@ export const Gallery: React.FC = () => {
             outline: "none",
           }}
         >
-          {selectedItem?.type === "image" && selectedItem.id ? (
+          {selectedItem?.type === "image" && selectedItem.src ? (
             <img
-              src={`https://picsum.photos/id/${selectedItem.id}/1200/800`}
-              alt={`Picsum ${selectedItem.id}`}
+              src={selectedItem.src}
+              alt=""
               style={{
                 maxWidth: "100%",
                 maxHeight: "100%",
