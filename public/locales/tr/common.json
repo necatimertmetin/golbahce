@@ -1,40 +1,40 @@
 {
   "seo": {
     "home": {
-      "title": "Ana Sayfa | Golbahçe",
-      "desc": "Golbahçe restoranına hoş geldiniz. Lezzetli yemekler ve eşsiz atmosfer sizi bekliyor.",
-      "ogTitle": "Golbahçe Restaurant - Ana Sayfa",
+      "title": "Ana Sayfa | Gölbahçe",
+      "desc": "Gölbahçe restoranına hoş geldiniz. Lezzetli yemekler ve eşsiz atmosfer sizi bekliyor.",
+      "ogTitle": "Gölbahçe Restaurant - Ana Sayfa",
       "ogDesc": "En taze malzemelerle hazırlanan nefis yemeklerimizi keşfedin."
     },
     "about": {
-      "title": "Hakkımızda | Golbahçe",
-      "desc": "Golbahçe'nin hikayesi, misyonu ve vizyonu hakkında bilgi alın.",
-      "ogTitle": "Hakkımızda - Golbahçe",
+      "title": "Hakkımızda | Gölbahçe",
+      "desc": "Gölbahçe'nin hikayesi, misyonu ve vizyonu hakkında bilgi alın.",
+      "ogTitle": "Hakkımızda - Gölbahçe",
       "ogDesc": "Yılların deneyimi ve tutkuyla hazırlanan lezzetlerimizin hikayesi."
     },
     "contact": {
-      "title": "İletişim | Golbahçe",
-      "desc": "Golbahçe ile iletişime geçin. Adres, telefon ve rezervasyon bilgileri.",
-      "ogTitle": "İletişim - Golbahçe",
+      "title": "İletişim | Gölbahçe",
+      "desc": "Gölbahçe ile iletişime geçin. Adres, telefon ve rezervasyon bilgileri.",
+      "ogTitle": "İletişim - Gölbahçe",
       "ogDesc": "Bize ulaşın, rezervasyon yapın ve sorularınızı iletin."
     },
     "products": {
-      "title": "Ürünlerimiz | Golbahçe",
-      "desc": "Golbahçe'nin özel ürünleri ve lezzetleri hakkında bilgi alın.",
-      "ogTitle": "Ürünlerimiz - Golbahçe",
+      "title": "Ürünlerimiz | Gölbahçe",
+      "desc": "Gölbahçe'nin özel ürünleri ve lezzetleri hakkında bilgi alın.",
+      "ogTitle": "Ürünlerimiz - Gölbahçe",
       "ogDesc": "Özenle seçilmiş malzemelerle hazırlanan özel ürünlerimiz."
     },
     "menu": {
-      "title": "Menü | Golbahçe",
-      "desc": "Golbahçe menüsü - Ana yemekler, başlangıçlar, tatlılar ve içecekler.",
-      "ogTitle": "Menü - Golbahçe",
+      "title": "Menü | Gölbahçe",
+      "desc": "Gölbahçe menüsü - Ana yemekler, başlangıçlar, tatlılar ve içecekler.",
+      "ogTitle": "Menü - Gölbahçe",
       "ogDesc": "Zengin menümüzden damak zevkinize uygun lezzetleri seçin."
     },
     "default": {
-      "title": "Golbahçe Restaurant",
-      "desc": "Golbahçe - Lezzet ve kalitenin buluştuğu nokta.",
-      "ogTitle": "Golbahçe Restaurant",
-      "ogDesc": "Eşsiz lezzetler ve unutulmaz deneyimler için Golbahçe'yi ziyaret edin."
+      "title": "Gölbahçe Restaurant",
+      "desc": "Gölbahçe - Lezzet ve kalitenin buluştuğu nokta.",
+      "ogTitle": "Gölbahçe Restaurant",
+      "ogDesc": "Eşsiz lezzetler ve unutulmaz deneyimler için Gölbahçe'yi ziyaret edin."
     }
   },
   "layout": {
@@ -440,11 +440,11 @@
       "subtitle": "Keyif, Huzur, Gölbahçe",
       "story": {
         "title": "Biz Kimiz?",
-        "paragraph1": "Golbahçe Tesisleri olarak en büyük hedefimiz, misafirlerimize kendi evlerinin rahatlığını ve bahçelerinin huzurunu sunabilmektir. Doğanın içinde, şehrin kalabalığından uzakta, misafirlerimizin sevdikleriyle birlikte keyifli ve unutulmaz anlar yaşamalarını sağlamak için varız.",
+        "paragraph1": "Gölbahçe Tesisleri olarak en büyük hedefimiz, misafirlerimize kendi evlerinin rahatlığını ve bahçelerinin huzurunu sunabilmektir. Doğanın içinde, şehrin kalabalığından uzakta, misafirlerimizin sevdikleriyle birlikte keyifli ve unutulmaz anlar yaşamalarını sağlamak için varız.",
         "paragraph2": "Orhangazi’mizin güzide köşesinde, İznik Gölü’nün berrak kıyısında, asırlık zeytin ağaçlarının serin gölgesinde ailecek vakit geçirebileceğiniz samimi ve güvenli bir ortam sunuyoruz. Tesislerimizde her ayrıntı, hem lezzet hem hijyen hem de bereketli bir kazanç anlayışı üzerine titizlikle düşünülmüştür.",
         "paragraph3": "Misafirlerimizin damak tadına hitap eden menülerimiz, temizliğe verdiğimiz önem ve içten hizmet anlayışımızla huzurun ve keyfin buluşma noktası olmayı amaçlıyoruz. Zeytin ağaçlarının huzur verici esintisi eşliğinde göl manzarasının tadını çıkarırken, kendinizi evinizin bahçesindeymiş gibi hissedeceksiniz.",
-        "paragraph4": "Golbahçe Tesisleri olarak, “Keyif, Huzur, Golbahçe” sloganımızla çıktığımız bu yolda siz değerli misafirlerimizi ağırlamaktan mutluluk duyuyoruz. Sizleri, aile sıcaklığında bir ortamda doğa ile iç içe, keyif dolu anlar yaşamaya davet ediyoruz.",
-        "imageAlt": "Golbahçe Tesisleri Genel Görünüm"
+        "paragraph4": "Gölbahçe Tesisleri olarak, “Keyif, Huzur, Gölbahçe” sloganımızla çıktığımız bu yolda siz değerli misafirlerimizi ağırlamaktan mutluluk duyuyoruz. Sizleri, aile sıcaklığında bir ortamda doğa ile iç içe, keyif dolu anlar yaşamaya davet ediyoruz.",
+        "imageAlt": "Gölbahçe Tesisleri Genel Görünüm"
       },
       "statsTitle": "Rakamlarla Gölbahçe",
       "stats": {
