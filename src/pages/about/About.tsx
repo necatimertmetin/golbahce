@@ -295,7 +295,6 @@ export const About = () => {
             sx={{
               fontWeight: 600,
               mb: 4,
-              color: "white",
               textShadow: "0 2px 10px rgba(0,0,0,0.3)",
               fontSize: { xs: "1.5rem", sm: "2rem" },
             }}

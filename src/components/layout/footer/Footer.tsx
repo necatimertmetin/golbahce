@@ -12,7 +12,6 @@ import { useTheme } from "@mui/material/styles";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { useTranslate } from "../../../hooks/useTranslation";
 import { ROUTES } from "../../../routes/Routes";
 
@@ -165,7 +164,6 @@ export const Footer = () => {
                   gap: 1,
                 }}
               >
-                <AccessTimeIcon fontSize="small" />
                 {translate("workingHours.title")}
               </Typography>
               <Stack spacing={1}>
