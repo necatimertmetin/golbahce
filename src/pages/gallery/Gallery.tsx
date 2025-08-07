@@ -20,17 +20,12 @@ type GalleryItem = {
 };
 
 const itemData: GalleryItem[] = [
-  { type: "image", src: "/images/gallery/IMG-20250705-WA0035.jpg" },
-  { type: "image", src: "/images/gallery/IMG-20250705-WA0038.jpg" },
-  { type: "image", src: "/images/gallery/IMG-20250705-WA0039.jpg" },
-  { type: "image", src: "/images/gallery/IMG-20250705-WA0041.jpg" },
-  { type: "image", src: "/images/gallery/IMG-20250705-WA0043.jpg" },
-  { type: "image", src: "/images/gallery/IMG-20250705-WA0044.jpg" },
-  { type: "image", src: "/images/gallery/IMG-20250705-WA0045.jpg" },
-  { type: "image", src: "/images/gallery/IMG-20250705-WA0046.jpg" },
-  { type: "image", src: "/images/gallery/IMG-20250705-WA0047.jpg" },
-  { type: "image", src: "/images/gallery/IMG-20250705-WA0048.jpg" },
-  { type: "image", src: "/images/gallery/IMG-20250705-WA0049.jpg" },
+  { type: "image", src: "/images/gallery/DSCN9666.JPG" },
+  { type: "image", src: "/images/gallery/DSCN9680.JPG" },
+  { type: "image", src: "/images/gallery/DSCN9682.JPG" },
+  { type: "image", src: "/images/gallery/DSCN9684.JPG" },
+  { type: "image", src: "/images/gallery/DSCN9692.JPG" },
+  { type: "image", src: "/images/gallery/DSCN9694.JPG" },
   { type: "image", src: "/images/gallery/IMG-20250705-WA0050.jpg" },
   { type: "image", src: "/images/gallery/IMG-20250705-WA0051.jpg" },
   { type: "image", src: "/images/gallery/IMG-20250705-WA0052.jpg" },
